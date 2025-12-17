@@ -1,0 +1,522 @@
+Analyzing currency_temperature_converter_mobile_app...          
+
+  error - The library directive must appear before all other directives - lib\core\accessibility\accessibility_helpers.dart:8:1 - library_directive_not_first
+   info - 'announce' is deprecated and shouldn't be used. Use sendAnnouncement instead. This API is incompatible with multiple windows. This feature was deprecated after v3.35.0-0.1.pre - lib\core\accessibility\accessibility_helpers.dart:171:24 - deprecated_member_use
+   info - 'textScaleFactor' is deprecated and shouldn't be used. Use textScaler instead. Use of textScaleFactor was deprecated in preparation for the upcoming nonlinear text scaling support. This feature was deprecated after v3.12.0-2.0.pre - lib\core\accessibility\accessibility_helpers.dart:200:35 - deprecated_member_use
+   info - 'announce' is deprecated and shouldn't be used. Use sendAnnouncement instead. This API is incompatible with multiple windows. This feature was deprecated after v3.35.0-0.1.pre - lib\core\accessibility\accessibility_helpers.dart:225:22 - deprecated_member_use
+   info - 'announce' is deprecated and shouldn't be used. Use sendAnnouncement instead. This API is incompatible with multiple windows. This feature was deprecated after v3.35.0-0.1.pre - lib\core\accessibility\accessibility_helpers.dart:233:22 - deprecated_member_use
+  error - Undefined class 'LiveRegionImportance' - lib\core\accessibility\accessibility_helpers.dart:327:5 - undefined_class
+  error - Undefined name 'LiveRegionImportance' - lib\core\accessibility\accessibility_helpers.dart:327:39 - undefined_identifier
+warning - Unused import: '../design_system/ds_spacing.dart' - lib\core\animations\animation_utils.dart:2:8 - unused_import
+  error - The library directive must appear before all other directives - lib\core\animations\animation_utils.dart:8:1 - library_directive_not_first
+   info - 'surfaceVariant' is deprecated and shouldn't be used. Use surfaceContainerHighest instead. This feature was deprecated after v3.18.0-0.1.pre - lib\core\animations\animation_utils.dart:337:39 - deprecated_member_use
+   info - The imported package 'flutter_dotenv' isn't a dependency of the importing package - lib\core\config\env_config.dart:1:8 - depend_on_referenced_packages
+  error - Target of URI doesn't exist: 'package:flutter_dotenv/flutter_dotenv.dart' - lib\core\config\env_config.dart:1:8 - uri_does_not_exist
+  error - Undefined name 'dotenv' - lib\core\config\env_config.dart:20:31 - undefined_identifier
+  error - Undefined name 'dotenv' - lib\core\config\env_config.dart:24:7 - undefined_identifier
+  error - Undefined name 'dotenv' - lib\core\config\env_config.dart:42:12 - undefined_identifier
+  error - Undefined name 'dotenv' - lib\core\config\env_config.dart:47:12 - undefined_identifier
+  error - Undefined name 'dotenv' - lib\core\config\env_config.dart:60:12 - undefined_identifier
+  error - Undefined name 'dotenv' - lib\core\config\env_config.dart:65:12 - undefined_identifier
+  error - Undefined name 'dotenv' - lib\core\config\env_config.dart:77:12 - undefined_identifier
+  error - Undefined name 'dotenv' - lib\core\config\env_config.dart:87:12 - undefined_identifier
+  error - Undefined name 'dotenv' - lib\core\config\env_config.dart:92:12 - undefined_identifier
+  error - Undefined name 'dotenv' - lib\core\config\env_config.dart:97:19 - undefined_identifier
+  error - Undefined name 'dotenv' - lib\core\config\env_config.dart:104:19 - undefined_identifier
+   info - Don't invoke 'print' in production code - lib\core\config\env_config.dart:113:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\config\env_config.dart:117:5 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\config\env_config.dart:118:5 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\config\env_config.dart:119:5 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\config\env_config.dart:120:5 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\config\env_config.dart:121:5 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\config\env_config.dart:122:5 - avoid_print
+  error - Undefined class 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:29:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:29:39 - const_initialized_with_non_constant_value
+  error - Undefined name 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:29:39 - undefined_identifier
+  error - Undefined class 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:30:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:30:39 - const_initialized_with_non_constant_value
+  error - Undefined name 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:30:39 - undefined_identifier
+  error - Undefined class 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:31:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:31:39 - const_initialized_with_non_constant_value
+  error - Undefined name 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:31:39 - undefined_identifier
+  error - Undefined class 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:32:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:32:39 - const_initialized_with_non_constant_value
+  error - Undefined name 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:32:39 - undefined_identifier
+  error - Undefined class 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:33:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:33:39 - const_initialized_with_non_constant_value
+  error - Undefined name 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:33:39 - undefined_identifier
+  error - Undefined class 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:34:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:34:40 - const_initialized_with_non_constant_value
+  error - Undefined name 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:34:40 - undefined_identifier
+  error - Undefined class 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:37:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:37:49 - const_initialized_with_non_constant_value
+  error - Undefined name 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:37:49 - undefined_identifier
+  error - Undefined class 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:40:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:40:49 - const_initialized_with_non_constant_value
+  error - Undefined name 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:40:49 - undefined_identifier
+  error - Undefined class 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:43:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:43:49 - const_initialized_with_non_constant_value
+  error - Undefined name 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:43:49 - undefined_identifier
+  error - Undefined class 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:46:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:46:49 - const_initialized_with_non_constant_value
+  error - Undefined name 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:46:49 - undefined_identifier
+  error - Undefined class 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:49:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:49:49 - const_initialized_with_non_constant_value
+  error - Undefined name 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:49:49 - undefined_identifier
+  error - Undefined class 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:52:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:52:50 - const_initialized_with_non_constant_value
+  error - Undefined name 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:52:50 - undefined_identifier
+  error - Undefined class 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:57:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:57:47 - const_initialized_with_non_constant_value
+  error - Undefined name 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:57:47 - undefined_identifier
+  error - Undefined class 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:60:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:60:47 - const_initialized_with_non_constant_value
+  error - Undefined name 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:60:47 - undefined_identifier
+  error - Undefined class 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:63:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:63:47 - const_initialized_with_non_constant_value
+  error - Undefined name 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:63:47 - undefined_identifier
+  error - Undefined class 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:66:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:66:47 - const_initialized_with_non_constant_value
+  error - Undefined name 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:66:47 - undefined_identifier
+  error - Undefined class 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:69:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:69:47 - const_initialized_with_non_constant_value
+  error - Undefined name 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:69:47 - undefined_identifier
+  error - Undefined class 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:72:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:72:48 - const_initialized_with_non_constant_value
+  error - Undefined name 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:72:48 - undefined_identifier
+  error - Undefined class 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:86:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:86:43 - const_initialized_with_non_constant_value
+  error - Undefined name 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:86:43 - undefined_identifier
+  error - Undefined class 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:87:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:87:53 - const_initialized_with_non_constant_value
+  error - Undefined name 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:87:53 - undefined_identifier
+  error - Undefined class 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:90:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:90:51 - const_initialized_with_non_constant_value
+  error - Undefined name 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:90:51 - undefined_identifier
+  error - Undefined class 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:96:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:96:44 - const_initialized_with_non_constant_value
+  error - Undefined name 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:96:44 - undefined_identifier
+  error - Undefined class 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:100:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:100:48 - const_initialized_with_non_constant_value
+  error - Undefined name 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:100:48 - undefined_identifier
+  error - Undefined class 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:101:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:101:55 - const_initialized_with_non_constant_value
+  error - Undefined name 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:101:55 - undefined_identifier
+  error - Undefined class 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:104:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:104:53 - const_initialized_with_non_constant_value
+  error - Undefined name 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:104:53 - undefined_identifier
+  error - Undefined class 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:114:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:114:44 - const_initialized_with_non_constant_value
+  error - Undefined name 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:114:44 - undefined_identifier
+  error - Undefined class 'Radius' - lib\core\design_system\ds_spacing.dart:131:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:131:34 - const_initialized_with_non_constant_value
+  error - Undefined name 'Radius' - lib\core\design_system\ds_spacing.dart:131:34 - undefined_identifier
+  error - Undefined class 'Radius' - lib\core\design_system\ds_spacing.dart:132:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:132:34 - const_initialized_with_non_constant_value
+  error - Undefined name 'Radius' - lib\core\design_system\ds_spacing.dart:132:34 - undefined_identifier
+  error - Undefined class 'Radius' - lib\core\design_system\ds_spacing.dart:133:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:133:34 - const_initialized_with_non_constant_value
+  error - Undefined name 'Radius' - lib\core\design_system\ds_spacing.dart:133:34 - undefined_identifier
+  error - Undefined class 'Radius' - lib\core\design_system\ds_spacing.dart:134:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:134:34 - const_initialized_with_non_constant_value
+  error - Undefined name 'Radius' - lib\core\design_system\ds_spacing.dart:134:34 - undefined_identifier
+  error - Undefined class 'Radius' - lib\core\design_system\ds_spacing.dart:135:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:135:34 - const_initialized_with_non_constant_value
+  error - Undefined name 'Radius' - lib\core\design_system\ds_spacing.dart:135:34 - undefined_identifier
+  error - Undefined class 'Radius' - lib\core\design_system\ds_spacing.dart:136:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:136:35 - const_initialized_with_non_constant_value
+  error - Undefined name 'Radius' - lib\core\design_system\ds_spacing.dart:136:35 - undefined_identifier
+  error - Undefined class 'BorderRadius' - lib\core\design_system\ds_spacing.dart:139:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:139:46 - const_initialized_with_non_constant_value
+  error - Undefined name 'BorderRadius' - lib\core\design_system\ds_spacing.dart:139:46 - undefined_identifier
+  error - Undefined class 'BorderRadius' - lib\core\design_system\ds_spacing.dart:140:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:140:46 - const_initialized_with_non_constant_value
+  error - Undefined name 'BorderRadius' - lib\core\design_system\ds_spacing.dart:140:46 - undefined_identifier
+  error - Undefined class 'BorderRadius' - lib\core\design_system\ds_spacing.dart:141:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:141:46 - const_initialized_with_non_constant_value
+  error - Undefined name 'BorderRadius' - lib\core\design_system\ds_spacing.dart:141:46 - undefined_identifier
+  error - Undefined class 'BorderRadius' - lib\core\design_system\ds_spacing.dart:142:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:142:46 - const_initialized_with_non_constant_value
+  error - Undefined name 'BorderRadius' - lib\core\design_system\ds_spacing.dart:142:46 - undefined_identifier
+  error - Undefined class 'BorderRadius' - lib\core\design_system\ds_spacing.dart:143:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:143:46 - const_initialized_with_non_constant_value
+  error - Undefined name 'BorderRadius' - lib\core\design_system\ds_spacing.dart:143:46 - undefined_identifier
+  error - Undefined class 'BorderRadius' - lib\core\design_system\ds_spacing.dart:144:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:144:47 - const_initialized_with_non_constant_value
+  error - Undefined name 'BorderRadius' - lib\core\design_system\ds_spacing.dart:144:47 - undefined_identifier
+  error - Undefined class 'BorderRadius' - lib\core\design_system\ds_spacing.dart:145:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:145:52 - const_initialized_with_non_constant_value
+  error - Undefined name 'BorderRadius' - lib\core\design_system\ds_spacing.dart:145:52 - undefined_identifier
+  error - Undefined name 'Radius' - lib\core\design_system\ds_spacing.dart:146:5 - undefined_identifier
+  error - Undefined class 'BorderRadius' - lib\core\design_system\ds_spacing.dart:150:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:150:49 - const_initialized_with_non_constant_value
+  error - Undefined name 'BorderRadius' - lib\core\design_system\ds_spacing.dart:150:49 - undefined_identifier
+  error - Undefined class 'BorderRadius' - lib\core\design_system\ds_spacing.dart:153:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:153:49 - const_initialized_with_non_constant_value
+  error - Undefined name 'BorderRadius' - lib\core\design_system\ds_spacing.dart:153:49 - undefined_identifier
+  error - Undefined class 'BorderRadius' - lib\core\design_system\ds_spacing.dart:158:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:158:52 - const_initialized_with_non_constant_value
+  error - Undefined name 'BorderRadius' - lib\core\design_system\ds_spacing.dart:158:52 - undefined_identifier
+  error - Undefined class 'BorderRadius' - lib\core\design_system\ds_spacing.dart:161:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:161:52 - const_initialized_with_non_constant_value
+  error - Undefined name 'BorderRadius' - lib\core\design_system\ds_spacing.dart:161:52 - undefined_identifier
+  error - Undefined class 'Curve' - lib\core\design_system\ds_spacing.dart:244:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:244:33 - const_initialized_with_non_constant_value
+  error - Undefined name 'Curves' - lib\core\design_system\ds_spacing.dart:244:33 - undefined_identifier
+  error - Undefined class 'Curve' - lib\core\design_system\ds_spacing.dart:245:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:245:35 - const_initialized_with_non_constant_value
+  error - Undefined name 'Curves' - lib\core\design_system\ds_spacing.dart:245:35 - undefined_identifier
+  error - Undefined class 'Curve' - lib\core\design_system\ds_spacing.dart:246:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:246:35 - const_initialized_with_non_constant_value
+  error - Undefined name 'Curves' - lib\core\design_system\ds_spacing.dart:246:35 - undefined_identifier
+  error - Undefined class 'Curve' - lib\core\design_system\ds_spacing.dart:247:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:247:35 - const_initialized_with_non_constant_value
+  error - Undefined name 'Curves' - lib\core\design_system\ds_spacing.dart:247:35 - undefined_identifier
+  error - Undefined class 'Curve' - lib\core\design_system\ds_spacing.dart:248:16 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\design_system\ds_spacing.dart:248:31 - const_initialized_with_non_constant_value
+  error - Undefined name 'Curves' - lib\core\design_system\ds_spacing.dart:248:31 - undefined_identifier
+  error - Undefined class 'EdgeInsets' - lib\core\design_system\ds_spacing.dart:284:10 - undefined_class
+warning - The value of the field '_fontFamily' isn't used - lib\core\design_system\ds_typography.dart:20:23 - unused_field
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\core\design_system\ds_typography.dart:337:47 - deprecated_member_use
+  error - The returned type 'CurrencyRepository' isn't returnable from a 'ICurrencyRepository' function, as required by the closure's context - lib\core\di\injection.dart:66:11 - return_of_invalid_type_from_closure
+  error - The returned type 'StorageRepository' isn't returnable from a 'IStorageRepository' function, as required by the closure's context - lib\core\di\injection.dart:71:57 - return_of_invalid_type_from_closure
+  error - The named parameter 'currencyRepo' isn't defined - lib\core\di\injection.dart:93:7 - undefined_named_parameter
+  error - The named parameter 'storage' isn't defined - lib\core\di\injection.dart:94:7 - undefined_named_parameter
+  error - The named parameter 'storage' isn't defined - lib\core\di\injection.dart:100:7 - undefined_named_parameter
+   info - The imported package 'firebase_crashlytics' isn't a dependency of the importing package - lib\core\di\injection_container.dart:1:8 - depend_on_referenced_packages
+  error - Target of URI doesn't exist: 'package:firebase_crashlytics/firebase_crashlytics.dart' - lib\core\di\injection_container.dart:1:8 - uri_does_not_exist
+  error - The getter 'instance' isn't defined for the type 'AppLogger' - lib\core\di\injection_container.dart:93:60 - undefined_getter
+  error - Too many positional arguments: 0 expected, but 1 found - lib\core\di\injection_container.dart:129:34 - extra_positional_arguments
+  error - The returned type 'CurrencyRepository' isn't returnable from a 'ICurrencyRepository' function, as required by the closure's context - lib\core\di\injection_container.dart:159:13 - return_of_invalid_type_from_closure
+  error - The argument type 'StorageRepository' can't be assigned to the parameter type 'IStorageRepository'.  - lib\core\di\injection_container.dart:167:49 - argument_type_not_assignable
+  error - The named parameter 'currencyRepo' isn't defined - lib\core\di\injection_container.dart:210:9 - undefined_named_parameter
+  error - The named parameter 'storage' isn't defined - lib\core\di\injection_container.dart:211:9 - undefined_named_parameter
+  error - The named parameter 'storage' isn't defined - lib\core\di\injection_container.dart:220:9 - undefined_named_parameter
+  error - The static method 'info' can't be accessed through an instance - lib\core\di\injection_container.dart:238:22 - instance_access_to_static_member
+  error - The getter 'allFactories' isn't defined for the type 'GetIt' - lib\core\di\injection_container.dart:242:39 - undefined_getter
+  error - The getter 'allFactories' isn't defined for the type 'GetIt' - lib\core\di\injection_container.dart:343:16 - undefined_getter
+   info - Don't invoke 'print' in production code - lib\core\services\certificate_pinning_service.dart:74:11 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\services\certificate_pinning_service.dart:86:11 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\services\certificate_pinning_service.dart:87:11 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\services\certificate_pinning_service.dart:88:11 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\services\certificate_pinning_service.dart:119:7 - avoid_print
+   info - The imported package 'firebase_crashlytics' isn't a dependency of the importing package - lib\core\services\crashlytics_service.dart:1:8 - depend_on_referenced_packages
+  error - Target of URI doesn't exist: 'package:firebase_crashlytics/firebase_crashlytics.dart' - lib\core\services\crashlytics_service.dart:1:8 - uri_does_not_exist
+  error - Undefined class 'FirebaseCrashlytics' - lib\core\services\crashlytics_service.dart:20:16 - undefined_class
+  error - Undefined name 'FirebaseCrashlytics' - lib\core\services\crashlytics_service.dart:20:51 - undefined_identifier
+  error - The argument type 'AndroidOptions?' can't be assigned to the parameter type 'AndroidOptions'.  - lib\core\services\secure_storage_service.dart:254:17 - argument_type_not_assignable
+  error - The argument type 'WebOptions?' can't be assigned to the parameter type 'WebOptions'.  - lib\core\services\secure_storage_service.dart:255:19 - argument_type_not_assignable
+warning - The declaration 'remove' isn't referenced - lib\core\utils\build_optimization.dart:150:15 - unused_element
+  error - Target of URI doesn't exist: '../models/conversion_history.dart' - lib\core\utils\heavy_computation.dart:3:8 - uri_does_not_exist
+  error - The name 'ConversionHistory' isn't a type, so it can't be used as a type argument - lib\core\utils\heavy_computation.dart:33:10 - non_type_as_type_argument
+  error - The name 'ConversionHistory' isn't a type, so it can't be used as a type argument - lib\core\utils\heavy_computation.dart:57:10 - non_type_as_type_argument
+  error - The name 'ConversionHistory' isn't a type, so it can't be used as a type argument - lib\core\utils\heavy_computation.dart:76:22 - non_type_as_type_argument
+  error - The name 'ConversionHistory' isn't a type, so it can't be used as a type argument - lib\core\utils\heavy_computation.dart:77:10 - non_type_as_type_argument
+  error - The name 'ConversionHistory' isn't a type, so it can't be used as a type argument - lib\core\utils\heavy_computation.dart:95:42 - non_type_as_type_argument
+  error - The name 'ConversionHistory' isn't a type, so it can't be used as a type argument - lib\core\utils\heavy_computation.dart:115:22 - non_type_as_type_argument
+  error - The name 'ConversionHistory' isn't a type, so it can't be used as a type argument - lib\core\utils\heavy_computation.dart:116:10 - non_type_as_type_argument
+  error - The name 'ConversionHistory' isn't a type, so it can't be used as a type argument - lib\core\utils\heavy_computation.dart:133:45 - non_type_as_type_argument
+  error - The property 'type' can't be unconditionally accessed because the receiver can be 'null' - lib\core\utils\heavy_computation.dart:139:41 - unchecked_use_of_nullable_value
+  error - The name 'ConversionHistory' isn't a type, so it can't be used as a type argument - lib\core\utils\heavy_computation.dart:163:10 - non_type_as_type_argument
+  error - The name 'ConversionHistory' isn't a type, so it can't be used as a type argument - lib\core\utils\heavy_computation.dart:169:15 - non_type_as_type_argument
+  error - The name 'ConversionHistory' isn't a type, so it can't be used as a type argument - lib\core\utils\heavy_computation.dart:172:45 - non_type_as_type_argument
+  error - The property 'fromCurrency' can't be unconditionally accessed because the receiver can be 'null' - lib\core\utils\heavy_computation.dart:176:16 - unchecked_use_of_nullable_value
+  error - The property 'toCurrency' can't be unconditionally accessed because the receiver can be 'null' - lib\core\utils\heavy_computation.dart:177:13 - unchecked_use_of_nullable_value
+  error - The property 'fromValue' can't be unconditionally accessed because the receiver can be 'null' - lib\core\utils\heavy_computation.dart:178:13 - unchecked_use_of_nullable_value
+  error - The property 'result' can't be unconditionally accessed because the receiver can be 'null' - lib\core\utils\heavy_computation.dart:179:13 - unchecked_use_of_nullable_value
+  error - The name 'ConversionHistory' isn't a type, so it can't be used as a type argument - lib\core\utils\heavy_computation.dart:184:47 - non_type_as_type_argument
+  error - The name 'ConversionHistory' isn't a type, so it can't be used as a type argument - lib\core\utils\heavy_computation.dart:202:15 - non_type_as_type_argument
+  error - The name 'ConversionHistory' isn't a type, so it can't be used as a type argument - lib\core\utils\heavy_computation.dart:205:45 - non_type_as_type_argument
+  error - The name 'ConversionHistory' isn't a type, so it can't be used as a type argument - lib\core\utils\heavy_computation.dart:214:15 - non_type_as_type_argument
+  error - The name 'ConversionHistory' isn't a type, so it can't be used as a type argument - lib\core\utils\heavy_computation.dart:215:10 - non_type_as_type_argument
+  error - The name 'ConversionHistory' isn't a type, so it can't be used as a type argument - lib\core\utils\heavy_computation.dart:219:25 - non_type_as_type_argument
+  error - The property 'timestamp' can't be unconditionally accessed because the receiver can be 'null' - lib\core\utils\heavy_computation.dart:226:26 - unchecked_use_of_nullable_value
+  error - The property 'timestamp' can't be unconditionally accessed because the receiver can be 'null' - lib\core\utils\heavy_computation.dart:226:48 - unchecked_use_of_nullable_value
+  error - The property 'fromValue' can't be unconditionally accessed because the receiver can be 'null' - lib\core\utils\heavy_computation.dart:229:26 - unchecked_use_of_nullable_value
+  error - The property 'fromValue' can't be unconditionally accessed because the receiver can be 'null' - lib\core\utils\heavy_computation.dart:229:48 - unchecked_use_of_nullable_value
+  error - The property 'fromCurrency' can't be unconditionally accessed because the receiver can be 'null' - lib\core\utils\heavy_computation.dart:232:26 - unchecked_use_of_nullable_value
+  error - The property 'fromCurrency' can't be unconditionally accessed because the receiver can be 'null' - lib\core\utils\heavy_computation.dart:232:51 - unchecked_use_of_nullable_value
+  error - The property 'toCurrency' can't be unconditionally accessed because the receiver can be 'null' - lib\core\utils\heavy_computation.dart:235:26 - unchecked_use_of_nullable_value
+  error - The property 'toCurrency' can't be unconditionally accessed because the receiver can be 'null' - lib\core\utils\heavy_computation.dart:235:49 - unchecked_use_of_nullable_value
+  error - The name 'ConversionHistory' isn't a type, so it can't be used as a type argument - lib\core\utils\heavy_computation.dart:247:49 - non_type_as_type_argument
+  error - The property 'fromValue' can't be unconditionally accessed because the receiver can be 'null' - lib\core\utils\heavy_computation.dart:262:30 - unchecked_use_of_nullable_value
+  error - The operator '+' can't be unconditionally invoked because the receiver can be 'null' - lib\core\utils\heavy_computation.dart:262:60 - unchecked_use_of_nullable_value
+  error - The name 'ConversionHistory' isn't a type, so it can't be used as a type argument - lib\core\utils\heavy_computation.dart:324:14 - non_type_as_type_argument
+   info - 'desiredAccuracy' is deprecated and shouldn't be used. use settings parameter with AndroidSettings, AppleSettings, WebSettings, or LocationSettings - lib\data\services\location_service.dart:47:9 - deprecated_member_use
+   info - Angle brackets will be interpreted as HTML - lib\domain\core\result.dart:134:25 - unintended_html_in_doc_comment
+  error - The named parameter 'stackTrace' isn't defined - lib\domain\core\result.dart:206:11 - undefined_named_parameter
+  error - The named parameter 'stackTrace' isn't defined - lib\domain\core\result.dart:228:11 - undefined_named_parameter
+   info - The type parameter name 'Type' matches a visible type name - lib\domain\usecases\usecase.dart:7:24 - avoid_types_as_parameter_names
+   info - The type parameter name 'Type' matches a visible type name - lib\domain\usecases\usecase.dart:17:32 - avoid_types_as_parameter_names
+warning - Dead code - lib\presentation\providers\currency_provider.dart:343:23 - dead_code
+warning - The left operand can't be null, so the right operand is never executed - lib\presentation\providers\currency_provider.dart:343:26 - dead_null_aware_expression
+  error - Target of URI doesn't exist: '../../core/di/injection.dart' - lib\presentation\providers\riverpod\currency_providers.dart:3:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../../domain/usecases/convert_currency_usecase.dart' - lib\presentation\providers\riverpod\currency_providers.dart:4:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../../domain/usecases/get_exchange_rates_usecase.dart' - lib\presentation\providers\riverpod\currency_providers.dart:5:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../state/currency_state.dart' - lib\presentation\providers\riverpod\currency_providers.dart:6:8 - uri_does_not_exist
+  error - Classes can only extend other classes - lib\presentation\providers\riverpod\currency_providers.dart:40:32 - extends_non_class
+  error - The name 'CurrencyState' isn't a type, so it can't be used as a type argument - lib\presentation\providers\riverpod\currency_providers.dart:40:46 - non_type_as_type_argument
+  error - Undefined class 'ConvertCurrencyUseCase' - lib\presentation\providers\riverpod\currency_providers.dart:41:9 - undefined_class
+  error - Undefined class 'GetExchangeRatesUseCase' - lib\presentation\providers\riverpod\currency_providers.dart:42:9 - undefined_class
+  error - Undefined class 'ConvertCurrencyUseCase' - lib\presentation\providers\riverpod\currency_providers.dart:45:14 - undefined_class
+  error - Undefined class 'GetExchangeRatesUseCase' - lib\presentation\providers\riverpod\currency_providers.dart:46:14 - undefined_class
+  error - Too many positional arguments: 0 expected, but 1 found - lib\presentation\providers\riverpod\currency_providers.dart:49:14 - extra_positional_arguments
+  error - The name 'CurrencyInitial' isn't a class - lib\presentation\providers\riverpod\currency_providers.dart:49:20 - creation_with_non_type
+  error - Undefined name 'state' - lib\presentation\providers\riverpod\currency_providers.dart:58:7 - undefined_identifier
+  error - The name 'CurrencyInitial' isn't a class - lib\presentation\providers\riverpod\currency_providers.dart:58:21 - creation_with_non_type
+  error - Undefined name 'state' - lib\presentation\providers\riverpod\currency_providers.dart:62:5 - undefined_identifier
+  error - The name 'CurrencyLoading' isn't a class - lib\presentation\providers\riverpod\currency_providers.dart:62:19 - creation_with_non_type
+  error - The method 'ConvertCurrencyParams' isn't defined for the type 'CurrencyNotifier' - lib\presentation\providers\riverpod\currency_providers.dart:65:7 - undefined_method
+  error - Undefined name 'state' - lib\presentation\providers\riverpod\currency_providers.dart:70:9 - undefined_identifier
+  error - The method 'CurrencyError' isn't defined for the type 'CurrencyNotifier' - lib\presentation\providers\riverpod\currency_providers.dart:70:17 - undefined_method
+  error - The method 'GetExchangeRatesParams' isn't defined for the type 'CurrencyNotifier' - lib\presentation\providers\riverpod\currency_providers.dart:75:11 - undefined_method
+  error - Undefined name 'state' - lib\presentation\providers\riverpod\currency_providers.dart:81:13 - undefined_identifier
+  error - The method 'CurrencySuccess' isn't defined for the type 'CurrencyNotifier' - lib\presentation\providers\riverpod\currency_providers.dart:81:21 - undefined_method
+  error - Undefined name 'state' - lib\presentation\providers\riverpod\currency_providers.dart:90:13 - undefined_identifier
+  error - The method 'CurrencySuccess' isn't defined for the type 'CurrencyNotifier' - lib\presentation\providers\riverpod\currency_providers.dart:90:21 - undefined_method
+  error - Undefined name 'state' - lib\presentation\providers\riverpod\currency_providers.dart:105:5 - undefined_identifier
+  error - The name 'CurrencyInitial' isn't a class - lib\presentation\providers\riverpod\currency_providers.dart:105:19 - creation_with_non_type
+  error - The function 'StateNotifierProvider' isn't defined - lib\presentation\providers\riverpod\currency_providers.dart:111:5 - undefined_function
+  error - The name 'CurrencyState' isn't a type, so it can't be used as a type argument - lib\presentation\providers\riverpod\currency_providers.dart:111:45 - non_type_as_type_argument
+  error - The function 'getIt' isn't defined - lib\presentation\providers\riverpod\currency_providers.dart:113:25 - undefined_function
+  error - The name 'ConvertCurrencyUseCase' isn't a type, so it can't be used as a type argument - lib\presentation\providers\riverpod\currency_providers.dart:113:31 - non_type_as_type_argument
+  error - The function 'getIt' isn't defined - lib\presentation\providers\riverpod\currency_providers.dart:114:26 - undefined_function
+  error - The name 'GetExchangeRatesUseCase' isn't a type, so it can't be used as a type argument - lib\presentation\providers\riverpod\currency_providers.dart:114:32 - non_type_as_type_argument
+  error - The function 'StateProvider' isn't defined - lib\presentation\providers\riverpod\currency_providers.dart:119:36 - undefined_function
+  error - The function 'StateProvider' isn't defined - lib\presentation\providers\riverpod\currency_providers.dart:126:32 - undefined_function
+  error - Target of URI doesn't exist: '../../core/di/injection.dart' - lib\presentation\providers\riverpod\history_providers.dart:3:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../../domain/usecases/get_conversion_history_usecase.dart' - lib\presentation\providers\riverpod\history_providers.dart:4:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../state/loading_state.dart' - lib\presentation\providers\riverpod\history_providers.dart:5:8 - uri_does_not_exist
+  error - The function 'getIt' isn't defined - lib\presentation\providers\riverpod\history_providers.dart:25:21 - undefined_function
+  error - The name 'GetConversionHistoryUseCase' isn't a type, so it can't be used as a type argument - lib\presentation\providers\riverpod\history_providers.dart:25:27 - non_type_as_type_argument
+  error - The function 'GetHistoryParams' isn't defined - lib\presentation\providers\riverpod\history_providers.dart:26:34 - undefined_function
+  error - The function 'StateProvider' isn't defined - lib\presentation\providers\riverpod\history_providers.dart:36:31 - undefined_function
+  error - Target of URI doesn't exist: '../../core/constants/app_constants.dart' - lib\presentation\providers\riverpod\temperature_providers.dart:3:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../state/temperature_state.dart' - lib\presentation\providers\riverpod\temperature_providers.dart:4:8 - uri_does_not_exist
+  error - Classes can only extend other classes - lib\presentation\providers\riverpod\temperature_providers.dart:27:35 - extends_non_class
+  error - The name 'TemperatureState' isn't a type, so it can't be used as a type argument - lib\presentation\providers\riverpod\temperature_providers.dart:27:49 - non_type_as_type_argument
+  error - Too many positional arguments: 0 expected, but 1 found - lib\presentation\providers\riverpod\temperature_providers.dart:28:33 - extra_positional_arguments
+  error - The name 'TemperatureInitial' isn't a class - lib\presentation\providers\riverpod\temperature_providers.dart:28:39 - creation_with_non_type
+  error - Undefined name 'state' - lib\presentation\providers\riverpod\temperature_providers.dart:33:7 - undefined_identifier
+  error - The name 'TemperatureInitial' isn't a class - lib\presentation\providers\riverpod\temperature_providers.dart:33:21 - creation_with_non_type
+  error - Undefined name 'state' - lib\presentation\providers\riverpod\temperature_providers.dart:40:9 - undefined_identifier
+  error - The method 'TemperatureError' isn't defined for the type 'TemperatureNotifier' - lib\presentation\providers\riverpod\temperature_providers.dart:40:17 - undefined_method
+  error - Undefined name 'state' - lib\presentation\providers\riverpod\temperature_providers.dart:66:11 - undefined_identifier
+  error - The method 'TemperatureError' isn't defined for the type 'TemperatureNotifier' - lib\presentation\providers\riverpod\temperature_providers.dart:66:19 - undefined_method
+  error - Undefined name 'state' - lib\presentation\providers\riverpod\temperature_providers.dart:70:7 - undefined_identifier
+  error - The method 'TemperatureConverted' isn't defined for the type 'TemperatureNotifier' - lib\presentation\providers\riverpod\temperature_providers.dart:70:15 - undefined_method
+  error - Undefined name 'state' - lib\presentation\providers\riverpod\temperature_providers.dart:79:7 - undefined_identifier
+  error - The method 'TemperatureError' isn't defined for the type 'TemperatureNotifier' - lib\presentation\providers\riverpod\temperature_providers.dart:79:15 - undefined_method
+  error - Undefined name 'AppConstants' - lib\presentation\providers\riverpod\temperature_providers.dart:87:25 - undefined_identifier
+  error - Undefined name 'AppConstants' - lib\presentation\providers\riverpod\temperature_providers.dart:89:25 - undefined_identifier
+  error - Undefined name 'AppConstants' - lib\presentation\providers\riverpod\temperature_providers.dart:91:25 - undefined_identifier
+  error - Undefined name 'state' - lib\presentation\providers\riverpod\temperature_providers.dart:99:5 - undefined_identifier
+  error - The name 'TemperatureInitial' isn't a class - lib\presentation\providers\riverpod\temperature_providers.dart:99:19 - creation_with_non_type
+  error - The function 'StateNotifierProvider' isn't defined - lib\presentation\providers\riverpod\temperature_providers.dart:105:5 - undefined_function
+  error - The name 'TemperatureState' isn't a type, so it can't be used as a type argument - lib\presentation\providers\riverpod\temperature_providers.dart:105:48 - non_type_as_type_argument
+  error - The function 'StateProvider' isn't defined - lib\presentation\providers\riverpod\temperature_providers.dart:110:41 - undefined_function
+  error - The function 'StateProvider' isn't defined - lib\presentation\providers\riverpod\temperature_providers.dart:115:34 - undefined_function
+warning - Dead code - lib\presentation\providers\temperature_provider.dart:136:23 - dead_code
+warning - The left operand can't be null, so the right operand is never executed - lib\presentation\providers\temperature_provider.dart:136:26 - dead_null_aware_expression
+  error - Target of URI doesn't exist: '../providers/riverpod/currency_providers.dart' - lib\presentation\screens\examples\currency_screen_riverpod_example.dart:4:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../state/currency_state.dart' - lib\presentation\screens\examples\currency_screen_riverpod_example.dart:5:8 - uri_does_not_exist
+  error - Undefined name 'currencyNotifierProvider' - lib\presentation\screens\examples\currency_screen_riverpod_example.dart:37:37 - undefined_identifier
+  error - Undefined name 'selectedCurrenciesProvider' - lib\presentation\screens\examples\currency_screen_riverpod_example.dart:38:42 - undefined_identifier
+  error - Undefined name 'currencyAmountProvider' - lib\presentation\screens\examples\currency_screen_riverpod_example.dart:60:26 - undefined_identifier
+  error - Undefined name 'selectedCurrenciesProvider' - lib\presentation\screens\examples\currency_screen_riverpod_example.dart:83:34 - undefined_identifier
+  error - Undefined name 'selectedCurrenciesProvider' - lib\presentation\screens\examples\currency_screen_riverpod_example.dart:109:34 - undefined_identifier
+  error - Undefined name 'currencyAmountProvider' - lib\presentation\screens\examples\currency_screen_riverpod_example.dart:125:41 - undefined_identifier
+  error - Undefined name 'currencyNotifierProvider' - lib\presentation\screens\examples\currency_screen_riverpod_example.dart:127:27 - undefined_identifier
+  error - Undefined class 'CurrencyState' - lib\presentation\screens\examples\currency_screen_riverpod_example.dart:148:30 - undefined_class
+  error - Undefined class 'CurrencyInitial' - lib\presentation\screens\examples\currency_screen_riverpod_example.dart:150:7 - undefined_class
+  error - Undefined class 'CurrencyLoading' - lib\presentation\screens\examples\currency_screen_riverpod_example.dart:159:7 - undefined_class
+  error - Undefined class 'CurrencySuccess' - lib\presentation\screens\examples\currency_screen_riverpod_example.dart:165:7 - undefined_class
+  error - Undefined class 'CurrencyError' - lib\presentation\screens\examples\currency_screen_riverpod_example.dart:188:7 - undefined_class
+  error - Undefined class 'CurrencyOffline' - lib\presentation\screens\examples\currency_screen_riverpod_example.dart:203:7 - undefined_class
+  error - Target of URI doesn't exist: '../../core/constants/app_constants.dart' - lib\presentation\widgets\common\buttons.dart:3:8 - uri_does_not_exist
+   info - 'surfaceVariant' is deprecated and shouldn't be used. Use surfaceContainerHighest instead. This feature was deprecated after v3.18.0-0.1.pre - lib\presentation\widgets\common\buttons.dart:62:46 - deprecated_member_use
+  error - Undefined name 'AppConstants' - lib\presentation\widgets\common\buttons.dart:66:47 - undefined_identifier
+  error - Undefined name 'AppConstants' - lib\presentation\widgets\common\buttons.dart:174:47 - undefined_identifier
+  error - Undefined name 'AppConstants' - lib\presentation\widgets\common\buttons.dart:274:47 - undefined_identifier
+  error - Target of URI doesn't exist: '../../core/animations/animation_utils.dart' - lib\presentation\widgets\common\empty_and_loading_states.dart:3:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../../core/design_system/ds_spacing.dart' - lib\presentation\widgets\common\empty_and_loading_states.dart:4:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../../core/design_system/ds_typography.dart' - lib\presentation\widgets\common\empty_and_loading_states.dart:5:8 - uri_does_not_exist
+  error - Undefined name 'DSSpacing' - lib\presentation\widgets\common\empty_and_loading_states.dart:45:18 - undefined_identifier
+  error - Undefined name 'DSSpacing' - lib\presentation\widgets\common\empty_and_loading_states.dart:51:39 - undefined_identifier
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\widgets\common\empty_and_loading_states.dart:54:22 - deprecated_member_use
+  error - The method 'fadeIn' isn't defined for the type 'Container' - lib\presentation\widgets\common\empty_and_loading_states.dart:62:15 - undefined_method
+  error - Undefined name 'DSSpacing' - lib\presentation\widgets\common\empty_and_loading_states.dart:64:30 - undefined_identifier
+  error - Undefined name 'DSTypography' - lib\presentation\widgets\common\empty_and_loading_states.dart:69:22 - undefined_identifier
+  error - The method 'fadeIn' isn't defined for the type 'Text' - lib\presentation\widgets\common\empty_and_loading_states.dart:71:15 - undefined_method
+  error - Undefined name 'DSSpacing' - lib\presentation\widgets\common\empty_and_loading_states.dart:73:30 - undefined_identifier
+  error - Undefined name 'DSTypography' - lib\presentation\widgets\common\empty_and_loading_states.dart:78:22 - undefined_identifier
+  error - The method 'fadeIn' isn't defined for the type 'Text' - lib\presentation\widgets\common\empty_and_loading_states.dart:82:15 - undefined_method
+  error - Undefined name 'DSSpacing' - lib\presentation\widgets\common\empty_and_loading_states.dart:86:32 - undefined_identifier
+  error - The method 'fadeIn' isn't defined for the type 'FilledButton' - lib\presentation\widgets\common\empty_and_loading_states.dart:90:17 - undefined_method
+  error - Undefined name 'DSSpacing' - lib\presentation\widgets\common\empty_and_loading_states.dart:203:18 - undefined_identifier
+  error - Undefined name 'DSSpacing' - lib\presentation\widgets\common\empty_and_loading_states.dart:210:32 - undefined_identifier
+  error - Undefined name 'DSTypography' - lib\presentation\widgets\common\empty_and_loading_states.dart:213:24 - undefined_identifier
+  error - Undefined name 'DSSpacing' - lib\presentation\widgets\common\empty_and_loading_states.dart:299:58 - undefined_identifier
+  error - The method 'PulseAnimation' isn't defined for the type '_PulseLoader' - lib\presentation\widgets\common\empty_and_loading_states.dart:324:14 - undefined_method
+  error - Undefined name 'DSSpacing' - lib\presentation\widgets\common\empty_and_loading_states.dart:363:27 - undefined_identifier
+  error - Undefined name 'DSTypography' - lib\presentation\widgets\common\empty_and_loading_states.dart:366:20 - undefined_identifier
+  error - Invalid constant value - lib\presentation\widgets\common\empty_and_loading_states.dart:392:23 - invalid_constant
+  error - Undefined name 'DSBorderRadius' - lib\presentation\widgets\common\empty_and_loading_states.dart:392:23 - undefined_identifier
+  error - Invalid constant value - lib\presentation\widgets\common\empty_and_loading_states.dart:408:24 - invalid_constant
+  error - Undefined name 'DSBorderRadius' - lib\presentation\widgets\common\empty_and_loading_states.dart:408:24 - undefined_identifier
+  error - The method 'ShimmerAnimation' isn't defined for the type 'SkeletonLoader' - lib\presentation\widgets\common\empty_and_loading_states.dart:412:12 - undefined_method
+   info - 'surfaceVariant' is deprecated and shouldn't be used. Use surfaceContainerHighest instead. This feature was deprecated after v3.18.0-0.1.pre - lib\presentation\widgets\common\empty_and_loading_states.dart:417:48 - deprecated_member_use
+  error - Undefined name 'DSSpacing' - lib\presentation\widgets\common\empty_and_loading_states.dart:440:62 - undefined_identifier
+  error - Undefined name 'DSSpacing' - lib\presentation\widgets\common\empty_and_loading_states.dart:444:20 - undefined_identifier
+  error - Undefined name 'DSSpacing' - lib\presentation\widgets\common\empty_and_loading_states.dart:448:31 - undefined_identifier
+  error - Undefined name 'DSSpacing' - lib\presentation\widgets\common\empty_and_loading_states.dart:455:38 - undefined_identifier
+  error - Undefined name 'DSSpacing' - lib\presentation\widgets\common\empty_and_loading_states.dart:482:18 - undefined_identifier
+  error - Undefined name 'DSSpacing' - lib\presentation\widgets\common\empty_and_loading_states.dart:487:30 - undefined_identifier
+  error - Undefined name 'DSSpacing' - lib\presentation\widgets\common\empty_and_loading_states.dart:489:30 - undefined_identifier
+  error - Undefined name 'DSSpacing' - lib\presentation\widgets\common\empty_and_loading_states.dart:495:33 - undefined_identifier
+  error - Target of URI doesn't exist: '../../core/errors/failures.dart' - lib\presentation\widgets\common\error_boundary.dart:3:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../../core/logging/app_logger.dart' - lib\presentation\widgets\common\error_boundary.dart:4:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../../core/services/crashlytics_service.dart' - lib\presentation\widgets\common\error_boundary.dart:5:8 - uri_does_not_exist
+  error - Undefined name 'AppLogger' - lib\presentation\widgets\common\error_boundary.dart:78:5 - undefined_identifier
+  error - Undefined name 'CrashlyticsService' - lib\presentation\widgets\common\error_boundary.dart:87:7 - undefined_identifier
+  error - The name 'Failure' isn't defined, so it can't be used in an 'is' expression - lib\presentation\widgets\common\error_boundary.dart:230:18 - type_test_with_undefined_name
+  error - The getter 'userMessage' isn't defined for the type 'Object' - lib\presentation\widgets\common\error_boundary.dart:231:20 - undefined_getter
+warning - Dead code - lib\presentation\widgets\common\error_boundary.dart:233:5 - dead_code
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\widgets\common\error_boundary.dart:300:65 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\widgets\common\error_boundary.dart:303:58 - deprecated_member_use
+  error - Undefined name 'AppLogger' - lib\presentation\widgets\common\error_boundary.dart:355:11 - undefined_identifier
+  error - Undefined name 'CrashlyticsService' - lib\presentation\widgets\common\error_boundary.dart:362:11 - undefined_identifier
+  error - Target of URI doesn't exist: '../../core/constants/app_constants.dart' - lib\presentation\widgets\common\state_views.dart:3:8 - uri_does_not_exist
+  error - Invalid constant value - lib\presentation\widgets\common\state_views.dart:52:39 - invalid_constant
+  error - Undefined name 'AppConstants' - lib\presentation\widgets\common\state_views.dart:52:39 - undefined_identifier
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\widgets\common\state_views.dart:62:51 - deprecated_member_use
+  error - Invalid constant value - lib\presentation\widgets\common\state_views.dart:169:39 - invalid_constant
+  error - Undefined name 'AppConstants' - lib\presentation\widgets\common\state_views.dart:169:39 - undefined_identifier
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\widgets\common\state_views.dart:179:55 - deprecated_member_use
+  error - Invalid constant value - lib\presentation\widgets\common\state_views.dart:364:36 - invalid_constant
+  error - Undefined name 'AppConstants' - lib\presentation\widgets\common\state_views.dart:364:36 - undefined_identifier
+  error - Invalid constant value - lib\presentation\widgets\common\state_views.dart:366:39 - invalid_constant
+  error - Undefined name 'AppConstants' - lib\presentation\widgets\common\state_views.dart:366:39 - undefined_identifier
+  error - Invalid constant value - lib\presentation\widgets\common\state_views.dart:412:36 - invalid_constant
+  error - Undefined name 'AppConstants' - lib\presentation\widgets\common\state_views.dart:412:36 - undefined_identifier
+  error - Invalid constant value - lib\presentation\widgets\common\state_views.dart:414:39 - invalid_constant
+  error - Undefined name 'AppConstants' - lib\presentation\widgets\common\state_views.dart:414:39 - undefined_identifier
+  error - Target of URI doesn't exist: '../../core/constants/app_constants.dart' - lib\presentation\widgets\common\text_fields.dart:4:8 - uri_does_not_exist
+   info - 'surfaceVariant' is deprecated and shouldn't be used. Use surfaceContainerHighest instead. This feature was deprecated after v3.18.0-0.1.pre - lib\presentation\widgets\common\text_fields.dart:158:31 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\widgets\common\text_fields.dart:158:46 - deprecated_member_use
+   info - 'surfaceVariant' is deprecated and shouldn't be used. Use surfaceContainerHighest instead. This feature was deprecated after v3.18.0-0.1.pre - lib\presentation\widgets\common\text_fields.dart:159:31 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\widgets\common\text_fields.dart:159:46 - deprecated_member_use
+  error - Undefined name 'AppConstants' - lib\presentation\widgets\common\text_fields.dart:162:17 - undefined_identifier
+  error - Undefined name 'AppConstants' - lib\presentation\widgets\common\text_fields.dart:168:17 - undefined_identifier
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\widgets\common\text_fields.dart:171:44 - deprecated_member_use
+  error - Undefined name 'AppConstants' - lib\presentation\widgets\common\text_fields.dart:177:17 - undefined_identifier
+  error - Undefined name 'AppConstants' - lib\presentation\widgets\common\text_fields.dart:183:17 - undefined_identifier
+  error - Undefined name 'AppConstants' - lib\presentation\widgets\common\text_fields.dart:189:17 - undefined_identifier
+  error - Undefined name 'AppConstants' - lib\presentation\widgets\common\text_fields.dart:195:17 - undefined_identifier
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\widgets\common\text_fields.dart:198:44 - deprecated_member_use
+   info - 'surfaceVariant' is deprecated and shouldn't be used. Use surfaceContainerHighest instead. This feature was deprecated after v3.18.0-0.1.pre - lib\presentation\widgets\common\text_fields.dart:349:32 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\presentation\widgets\common\text_fields.dart:349:47 - deprecated_member_use
+  error - Undefined name 'AppConstants' - lib\presentation\widgets\common\text_fields.dart:351:47 - undefined_identifier
+  error - The named parameter 'currency' is required, but there's no corresponding argument - test\widget\converter_card_test.dart:21:17 - missing_required_argument
+  error - The named parameter 'value' is required, but there's no corresponding argument - test\widget\converter_card_test.dart:21:17 - missing_required_argument
+  error - The named parameter 'input' isn't defined - test\widget\converter_card_test.dart:23:13 - undefined_named_parameter
+  error - The named parameter 'result' isn't defined - test\widget\converter_card_test.dart:24:13 - undefined_named_parameter
+  error - The named parameter 'fromUnit' isn't defined - test\widget\converter_card_test.dart:25:13 - undefined_named_parameter
+  error - The named parameter 'toUnit' isn't defined - test\widget\converter_card_test.dart:26:13 - undefined_named_parameter
+  error - The named parameter 'onSwap' isn't defined - test\widget\converter_card_test.dart:27:13 - undefined_named_parameter
+  error - The named parameter 'history' isn't defined - test\widget\converter_card_test.dart:28:13 - undefined_named_parameter
+  error - The named parameter 'exchangeRate' is required, but there's no corresponding argument - test\widget\converter_card_test.dart:28:22 - missing_required_argument
+  error - The named parameter 'fromCurrency' is required, but there's no corresponding argument - test\widget\converter_card_test.dart:28:22 - missing_required_argument
+  error - The named parameter 'toCurrency' is required, but there's no corresponding argument - test\widget\converter_card_test.dart:28:22 - missing_required_argument
+  error - The named parameter 'fromUnit' isn't defined - test\widget\converter_card_test.dart:30:15 - undefined_named_parameter
+  error - The named parameter 'toUnit' isn't defined - test\widget\converter_card_test.dart:31:15 - undefined_named_parameter
+  error - The named parameter 'timestamp' isn't defined - test\widget\converter_card_test.dart:33:15 - undefined_named_parameter
+  error - The named parameter 'currency' is required, but there's no corresponding argument - test\widget\converter_card_test.dart:56:17 - missing_required_argument
+  error - The named parameter 'value' is required, but there's no corresponding argument - test\widget\converter_card_test.dart:56:17 - missing_required_argument
+  error - The named parameter 'input' isn't defined - test\widget\converter_card_test.dart:58:13 - undefined_named_parameter
+  error - The named parameter 'result' isn't defined - test\widget\converter_card_test.dart:59:13 - undefined_named_parameter
+  error - The named parameter 'fromUnit' isn't defined - test\widget\converter_card_test.dart:60:13 - undefined_named_parameter
+  error - The named parameter 'toUnit' isn't defined - test\widget\converter_card_test.dart:61:13 - undefined_named_parameter
+  error - The named parameter 'onSwap' isn't defined - test\widget\converter_card_test.dart:62:13 - undefined_named_parameter
+  error - The named parameter 'history' isn't defined - test\widget\converter_card_test.dart:65:13 - undefined_named_parameter
+  error - The named parameter 'exchangeRate' is required, but there's no corresponding argument - test\widget\converter_card_test.dart:65:22 - missing_required_argument
+  error - The named parameter 'fromCurrency' is required, but there's no corresponding argument - test\widget\converter_card_test.dart:65:22 - missing_required_argument
+  error - The named parameter 'toCurrency' is required, but there's no corresponding argument - test\widget\converter_card_test.dart:65:22 - missing_required_argument
+  error - The named parameter 'fromUnit' isn't defined - test\widget\converter_card_test.dart:67:15 - undefined_named_parameter
+  error - The named parameter 'toUnit' isn't defined - test\widget\converter_card_test.dart:68:15 - undefined_named_parameter
+  error - The named parameter 'timestamp' isn't defined - test\widget\converter_card_test.dart:70:15 - undefined_named_parameter
+  error - The named parameter 'currency' is required, but there's no corresponding argument - test\widget\converter_card_test.dart:95:17 - missing_required_argument
+  error - The named parameter 'value' is required, but there's no corresponding argument - test\widget\converter_card_test.dart:95:17 - missing_required_argument
+  error - The named parameter 'input' isn't defined - test\widget\converter_card_test.dart:97:13 - undefined_named_parameter
+  error - The named parameter 'result' isn't defined - test\widget\converter_card_test.dart:98:13 - undefined_named_parameter
+  error - The named parameter 'fromUnit' isn't defined - test\widget\converter_card_test.dart:99:13 - undefined_named_parameter
+  error - The named parameter 'toUnit' isn't defined - test\widget\converter_card_test.dart:100:13 - undefined_named_parameter
+  error - The named parameter 'onSwap' isn't defined - test\widget\converter_card_test.dart:101:13 - undefined_named_parameter
+  error - The named parameter 'history' isn't defined - test\widget\converter_card_test.dart:102:13 - undefined_named_parameter
+  error - The named parameter 'currency' is required, but there's no corresponding argument - test\widget\converter_card_test.dart:119:17 - missing_required_argument
+  error - The named parameter 'value' is required, but there's no corresponding argument - test\widget\converter_card_test.dart:119:17 - missing_required_argument
+  error - The named parameter 'input' isn't defined - test\widget\converter_card_test.dart:121:13 - undefined_named_parameter
+  error - The named parameter 'result' isn't defined - test\widget\converter_card_test.dart:122:13 - undefined_named_parameter
+  error - The named parameter 'fromUnit' isn't defined - test\widget\converter_card_test.dart:123:13 - undefined_named_parameter
+  error - The named parameter 'toUnit' isn't defined - test\widget\converter_card_test.dart:124:13 - undefined_named_parameter
+  error - The named parameter 'onSwap' isn't defined - test\widget\converter_card_test.dart:125:13 - undefined_named_parameter
+  error - The named parameter 'history' isn't defined - test\widget\converter_card_test.dart:126:13 - undefined_named_parameter
+  error - The named parameter 'exchangeRate' is required, but there's no corresponding argument - test\widget\converter_card_test.dart:126:22 - missing_required_argument
+  error - The named parameter 'fromCurrency' is required, but there's no corresponding argument - test\widget\converter_card_test.dart:126:22 - missing_required_argument
+  error - The named parameter 'toCurrency' is required, but there's no corresponding argument - test\widget\converter_card_test.dart:126:22 - missing_required_argument
+  error - The named parameter 'fromUnit' isn't defined - test\widget\converter_card_test.dart:128:15 - undefined_named_parameter
+  error - The named parameter 'toUnit' isn't defined - test\widget\converter_card_test.dart:129:15 - undefined_named_parameter
+  error - The named parameter 'timestamp' isn't defined - test\widget\converter_card_test.dart:131:15 - undefined_named_parameter
+  error - The named parameter 'currency' is required, but there's no corresponding argument - test\widget\converter_card_test.dart:149:17 - missing_required_argument
+  error - The named parameter 'value' is required, but there's no corresponding argument - test\widget\converter_card_test.dart:149:17 - missing_required_argument
+  error - The named parameter 'input' isn't defined - test\widget\converter_card_test.dart:151:13 - undefined_named_parameter
+  error - The named parameter 'result' isn't defined - test\widget\converter_card_test.dart:152:13 - undefined_named_parameter
+  error - The named parameter 'fromUnit' isn't defined - test\widget\converter_card_test.dart:153:13 - undefined_named_parameter
+  error - The named parameter 'toUnit' isn't defined - test\widget\converter_card_test.dart:154:13 - undefined_named_parameter
+  error - The named parameter 'onSwap' isn't defined - test\widget\converter_card_test.dart:155:13 - undefined_named_parameter
+  error - The named parameter 'history' isn't defined - test\widget\converter_card_test.dart:156:13 - undefined_named_parameter
+  error - The named parameter 'exchangeRate' is required, but there's no corresponding argument - test\widget\converter_card_test.dart:156:22 - missing_required_argument
+  error - The named parameter 'fromCurrency' is required, but there's no corresponding argument - test\widget\converter_card_test.dart:156:22 - missing_required_argument
+  error - The named parameter 'toCurrency' is required, but there's no corresponding argument - test\widget\converter_card_test.dart:156:22 - missing_required_argument
+  error - The named parameter 'fromUnit' isn't defined - test\widget\converter_card_test.dart:158:15 - undefined_named_parameter
+  error - The named parameter 'toUnit' isn't defined - test\widget\converter_card_test.dart:159:15 - undefined_named_parameter
+  error - The named parameter 'timestamp' isn't defined - test\widget\converter_card_test.dart:161:15 - undefined_named_parameter
+  error - The named parameter 'currency' is required, but there's no corresponding argument - test\widget\converter_card_test.dart:179:17 - missing_required_argument
+  error - The named parameter 'value' is required, but there's no corresponding argument - test\widget\converter_card_test.dart:179:17 - missing_required_argument
+  error - The named parameter 'input' isn't defined - test\widget\converter_card_test.dart:181:13 - undefined_named_parameter
+  error - The named parameter 'result' isn't defined - test\widget\converter_card_test.dart:182:13 - undefined_named_parameter
+  error - The named parameter 'fromUnit' isn't defined - test\widget\converter_card_test.dart:183:13 - undefined_named_parameter
+  error - The named parameter 'toUnit' isn't defined - test\widget\converter_card_test.dart:184:13 - undefined_named_parameter
+  error - The named parameter 'onSwap' isn't defined - test\widget\converter_card_test.dart:185:13 - undefined_named_parameter
+  error - The named parameter 'rate' isn't defined - test\widget\converter_card_test.dart:186:13 - undefined_named_parameter
+  error - The named parameter 'history' isn't defined - test\widget\converter_card_test.dart:187:13 - undefined_named_parameter
+  error - The named parameter 'fromCurrency' is required, but there's no corresponding argument - test\widget\converter_card_test.dart:187:22 - missing_required_argument
+  error - The named parameter 'toCurrency' is required, but there's no corresponding argument - test\widget\converter_card_test.dart:187:22 - missing_required_argument
+  error - The named parameter 'fromUnit' isn't defined - test\widget\converter_card_test.dart:189:15 - undefined_named_parameter
+  error - The named parameter 'toUnit' isn't defined - test\widget\converter_card_test.dart:190:15 - undefined_named_parameter
+  error - The named parameter 'timestamp' isn't defined - test\widget\converter_card_test.dart:192:15 - undefined_named_parameter
+  error - The named parameter 'currency' is required, but there's no corresponding argument - test\widget\converter_card_test.dart:210:17 - missing_required_argument
+  error - The named parameter 'value' is required, but there's no corresponding argument - test\widget\converter_card_test.dart:210:17 - missing_required_argument
+  error - The named parameter 'input' isn't defined - test\widget\converter_card_test.dart:212:13 - undefined_named_parameter
+  error - The named parameter 'result' isn't defined - test\widget\converter_card_test.dart:213:13 - undefined_named_parameter
+  error - The named parameter 'fromUnit' isn't defined - test\widget\converter_card_test.dart:214:13 - undefined_named_parameter
+  error - The named parameter 'toUnit' isn't defined - test\widget\converter_card_test.dart:215:13 - undefined_named_parameter
+  error - The named parameter 'onSwap' isn't defined - test\widget\converter_card_test.dart:216:13 - undefined_named_parameter
+  error - The named parameter 'history' isn't defined - test\widget\converter_card_test.dart:217:13 - undefined_named_parameter
+  error - The named parameter 'exchangeRate' is required, but there's no corresponding argument - test\widget\converter_card_test.dart:217:22 - missing_required_argument
+  error - The named parameter 'fromCurrency' is required, but there's no corresponding argument - test\widget\converter_card_test.dart:217:22 - missing_required_argument
+  error - The named parameter 'toCurrency' is required, but there's no corresponding argument - test\widget\converter_card_test.dart:217:22 - missing_required_argument
+  error - The named parameter 'fromUnit' isn't defined - test\widget\converter_card_test.dart:219:15 - undefined_named_parameter
+  error - The named parameter 'toUnit' isn't defined - test\widget\converter_card_test.dart:220:15 - undefined_named_parameter
+  error - The named parameter 'timestamp' isn't defined - test\widget\converter_card_test.dart:222:15 - undefined_named_parameter
+  error - There isn't a setter named 'inputValue' in class 'TemperatureProvider' - test\widget\temperature_screen_test.dart:170:25 - assignment_to_final_no_setter
+  error - There isn't a setter named 'selectedUnit' in class 'TemperatureProvider' - test\widget\temperature_screen_test.dart:171:25 - assignment_to_final_no_setter
+  error - The method 'convert' isn't defined for the type 'TemperatureProvider' - test\widget\temperature_screen_test.dart:172:25 - undefined_method
+  error - There isn't a setter named 'inputValue' in class 'TemperatureProvider' - test\widget\temperature_screen_test.dart:197:25 - assignment_to_final_no_setter
+  error - There isn't a setter named 'selectedUnit' in class 'TemperatureProvider' - test\widget\temperature_screen_test.dart:198:25 - assignment_to_final_no_setter
+  error - The method 'convert' isn't defined for the type 'TemperatureProvider' - test\widget\temperature_screen_test.dart:199:25 - undefined_method
+  error - There isn't a setter named 'inputValue' in class 'TemperatureProvider' - test\widget\temperature_screen_test.dart:305:25 - assignment_to_final_no_setter
+  error - There isn't a setter named 'selectedUnit' in class 'TemperatureProvider' - test\widget\temperature_screen_test.dart:306:25 - assignment_to_final_no_setter
+  error - The method 'convert' isn't defined for the type 'TemperatureProvider' - test\widget\temperature_screen_test.dart:307:25 - undefined_method
+
+518 issues found. (ran in 1.9s)
