@@ -1,710 +1,539 @@
-# 💱🌡️ Currency & Temperature Converter Mobile App
+# Converter Pro - Currency and Temperature Converter Mobile App
 
-Aplikasi Flutter multi-platform yang komprehensif untuk konversi mata uang dan suhu dengan fitur-fitur canggih termasuk deteksi currency berbasis GPS, riwayat konversi, dan pengaturan yang dapat disesuaikan.
-
----
-
-## ✨ Fitur Utama
-
-### 🔄 Fungsi Inti
-- **Konverter Mata Uang**: Mendukung 18 mata uang utama dengan nilai tukar real-time
-  - USD, EUR, GBP, JPY, CHF, CAD, AUD, NZD
-  - CNY, INR, IDR, KRW, SGD, HKD, MYR, THB, PHP, VND
-- **Konverter Suhu**: Konversi antara Celsius, Fahrenheit, Kelvin, dan Reamur
-- **Konversi Real-time**: Hasil langsung saat Anda mengetik dengan validasi input otomatis
-- **Riwayat Konversi**: Simpan dan kelola riwayat konversi dengan fitur search, filter, dan sort
-
-### 🎯 Fitur Lanjutan
-- **Deteksi GPS Otomatis**: Deteksi mata uang Anda secara otomatis berdasarkan lokasi GPS (40+ negara)
-- **Haptic Feedback**: Getaran taktil untuk interaksi tombol yang lebih responsif
-- **Share Functionality**: Bagikan hasil konversi melalui native share sheet
-- **Clipboard Support**: Salin hasil ke clipboard dengan satu ketukan
-- **Theme Support**: Tema terang dan gelap dengan Material Design 3
-- **Responsive Design**: Layout optimal untuk mobile, tablet, dan desktop
-
-### 🎨 UI/UX Enhancements
-- ✨ Hero animations untuk transisi screen yang smooth
-- 🎭 Fade animations untuk hasil konversi
-- 🎪 Bounce animations untuk tombol interaktif
-- ⚡ Shimmer loading effects selama API calls
-- 🎨 Custom typography dengan Google Fonts
-- 🎯 Antarmuka Material Design 3 yang clean dan intuitif
+Converter Pro adalah aplikasi mobile multi-platform berbasis Flutter yang dirancang untuk kebutuhan konversi mata uang secara real-time dan konversi suhu multi-satuan dengan presisi tinggi. Aplikasi ini mengintegrasikan arsitektur perangkat lunak Clean Architecture, manajemen state reaktif, penyimpanan lokal berbasis NoSQL, dan fitur deteksi lokasi perangkat berbasis GPS untuk menentukan mata uang asal secara otomatis.
 
 ---
 
-## 🚀 Cara Memulai
+## Daftar Isi
 
-### Prasyarat
-- Flutter SDK ^3.10.4
-- Dart SDK (included dengan Flutter)
-- IDE (VS Code, Android Studio, atau IntelliJ IDEA)
-- Git untuk clone repository
+1. [Ringkasan Proyek](#ringkasan-proyek)
+2. [Spesifikasi Teknis](#spesifikasi-teknis)
+3. [Fitur Utama](#fitur-utama)
+   - [Konverter Mata Uang](#konverter-mata-uang)
+   - [Konverter Suhu](#konverter-suhu)
+   - [Deteksi Lokasi GPS Otomatis](#deteksi-lokasi-gps-otomatis)
+   - [Manajemen Riwayat Konversi](#manajemen-riwayat-konversi)
+   - [Pengaturan dan Preferensi](#pengaturan-dan-preferensi)
+4. [Arsitektur Perangkat Lunak](#arsitektur-perangkat-lunak)
+   - [Prinsip Clean Architecture](#prinsip-clean-architecture)
+   - [Pola Desain](#pola-desain)
+   - [Alur Data dan State Management](#alur-data-dan-state-management)
+5. [Struktur Direktori Proyek](#struktur-direktori-proyek)
+6. [Daftar Dependensi](#daftar-dependensi)
+7. [Dukungan Platform](#dukungan-platform)
+8. [Prasyarat Sistem](#prasyarat-sistem)
+9. [Panduan Instalasi dan Menjalankan Aplikasi](#panduan-instalasi-dan-menjalankan-aplikasi)
+   - [Instalasi Dependensi](#instalasi-dependensi)
+   - [Menjalankan di Web](#menjalankan-di-web)
+   - [Menjalankan di Android](#menjalankan-di-android)
+   - [Menjalankan di Desktop](#menjalankan-di-desktop)
+10. [Panduan Pengujian](#panduan-pengujian)
+    - [Unit Testing](#unit-testing)
+    - [Integration Testing](#integration-testing)
+    - [Analisis Statis Kode](#analisis-statis-kode)
+11. [Panduan Build dan Rilis](#panduan-build-dan-rilis)
+    - [Android (APK dan App Bundle)](#android-apk-dan-app-bundle)
+    - [Web Production](#web-production)
+    - [Desktop Executable](#desktop-executable)
+12. [Optimasi Performa dan Keamanan](#optimasi-performa-dan-keamanan)
+13. [Batasan Platform dan Solusi](#batasan-platform-dan-solusi)
+14. [Panduan Kontribusi](#panduan-kontribusi)
+15. [Lisensi dan Pengakuan](#lisensi-dan-pengakuan)
 
-### Instalasi
+---
 
-**1. Clone repository**
+## Ringkasan Proyek
+
+Converter Pro dikembangkan untuk memberikan pengalaman konversi nilai yang cepat, akurat, dan dapat diandalkan baik dalam kondisi daring maupun luring. Aplikasi ini mengombinasikan desain antarmuka modern berstandar Material Design 3 dengan logika bisnis yang modular dan mudah diuji.
+
+Informasi Metadata:
+- Nama Aplikasi: Converter Pro
+- Versi: 1.0.0+1
+- Flutter SDK: ^3.10.4
+- Dart SDK: ^3.0.0
+- Target Platform: Android, iOS, Web, Windows, macOS, Linux
+
+---
+
+## Spesifikasi Teknis
+
+- Bahasa Pemrograman: Dart 3
+- Framework: Flutter 3
+- Design System: Material Design 3 dengan dukungan tema Terang (Light) dan Gelap (Dark)
+- State Management: Provider Pattern didukung Riverpod untuk modern state evaluation
+- Local Database: Hive (NoSQL database berkecepatan tinggi)
+- Key-Value Storage: SharedPreferences dan FlutterSecureStorage
+- Networking: HTTP client dengan caching layer lokal
+- Hardware Services: Geolocator, Geocoding, Vibration API
+
+---
+
+## Fitur Utama
+
+### Konverter Mata Uang
+- Mendukung 15 mata uang utama dunia:
+  - USD (US Dollar)
+  - EUR (Euro)
+  - GBP (British Pound)
+  - JPY (Japanese Yen)
+  - CNY (Chinese Yuan)
+  - IDR (Indonesian Rupiah)
+  - SGD (Singapore Dollar)
+  - AUD (Australian Dollar)
+  - CAD (Canadian Dollar)
+  - CHF (Swiss Franc)
+  - INR (Indian Rupee)
+  - MYR (Malaysian Ringgit)
+  - THB (Thai Baht)
+  - KRW (South Korean Won)
+  - HKD (Hong Kong Dollar)
+- Integrasi ExchangeRate-API dengan pembaruan kurs terkini.
+- Mekanisme Debounce 500ms pada pengetikan input untuk mencegah pemanggilan API berulang secara berlebihan.
+- Caching layer otomatis dengan masa berlaku 1 jam untuk efisiensi jaringan.
+- Mode Offline cerdas: konversi tetap beroperasi memanfaatkan nilai tukar tersimpan di cache lokal atau nilai rujukan bawaan jika koneksi internet terputus.
+- Tombol Swap instan untuk menukar mata uang asal dan mata uang tujuan dalam satu ketukan.
+- Fitur Salin ke Clipboard dan Berbagi (Native Share Sheet) untuk mendistribusikan hasil konversi ke aplikasi lain.
+
+### Konverter Suhu
+- Mendukung konversi empat skala temperatur utama:
+  - Celsius (C)
+  - Fahrenheit (F)
+  - Kelvin (K)
+  - Reamur (R)
+- Kalkulasi multirarah secara langsung (real-time) saat angka dimasukkan.
+- Indikator status visual kontekstual berbasis rentang derajat suhu (dingin, sedang, panas).
+- Validasi numerik otomatis termasuk perlindungan terhadap batas nol mutlak (Absolute Zero).
+
+### Deteksi Lokasi GPS Otomatis
+- Deteksi koordinat perangkat melalui sensor GPS bawaan.
+- Reverse geocoding terintegrasi untuk memetakan negara pengguna (mencakup lebih dari 40 negara).
+- Pemilihan mata uang asal otomatis yang relevan dengan lokasi geografis pengguna.
+- Penanganan izin lokasi (permission handling) yang komprehensif untuk status izin ditolak, ditolak permanen, maupun saat sensor lokasi dimatikan.
+
+### Manajemen Riwayat Konversi
+- Penyimpanan persisten setiap transaksi konversi (mata uang dan suhu) menggunakan Hive NoSQL.
+- Pencarian data instan berdasarkan simbol mata uang, satuan suhu, atau nilai angka.
+- Filter kategori riwayat: Semua, Mata Uang, dan Suhu.
+- Tap to Reuse: Memuat kembali data riwayat masa lalu langsung ke kalkulator konversi yang aktif.
+- Batas penyimpanan hingga 100 entri teratas dengan fitur penghapusan massal disertai dialog konfirmasi keamanan.
+
+### Pengaturan dan Preferensi
+- Pilihan Mode Tema: Sistem, Terang (Light Mode), dan Gelap (Dark Mode).
+- Konfigurasi Mata Uang Default saat aplikasi pertama kali dibuka.
+- Pengaturan Presisi Desimal: Fleksibilitas jumlah angka di belakang koma (0 hingga 4 digit desimal).
+- Toggle Pembaruan Kurs Otomatis.
+- Toggle Haptic Feedback untuk umpan balik getaran taktil saat berinteraksi.
+- Toggle Deteksi Lokasi Otomatis saat aplikasi dijalankan.
+- Seluruh konfigurasi tersimpan secara persisten melalui SharedPreferences.
+
+---
+
+## Arsitektur Perangkat Lunak
+
+Aplikasi ini menerapkan standar Clean Architecture yang memisahkan tanggung jawab kode ke dalam tiga lapisan utama: Lapisan Presentasi (Presentation), Lapisan Domain (Domain), dan Lapisan Data (Data).
+
+```
++-------------------------------------------------------------+
+|                     PRESENTATION LAYER                      |
+|   Screens (UI), Reusable Widgets, Providers (State Mgmt)    |
++-------------------------------------------------------------+
+                              |
+                              v
++-------------------------------------------------------------+
+|                        DOMAIN LAYER                         |
+|   Entities, Use Cases, Repository Contracts, Failures       |
++-------------------------------------------------------------+
+                              ^
+                              |
++-------------------------------------------------------------+
+|                         DATA LAYER                          |
+|   Models (DTOs, Hive Adapters), Repository Implementations, |
+|   Remote Services (HTTP API), Local Services (Hive, Prefs)  |
++-------------------------------------------------------------+
+                              |
++-------------------------------------------------------------+
+|                         CORE LAYER                          |
+|   Constants, Theme Tokens, Network Config, Helpers, Errors  |
++-------------------------------------------------------------+
+```
+
+### Prinsip Clean Architecture
+1. Core Layer: Menyimpan konfigurasi global, tema aplikasi, token tipografi, pemetaan rute, penanganan galat dasar, dan kelas pembantu (utilities).
+2. Data Layer: Bertanggung jawab atas pengambilan data mentah dari API eksternal dan database lokal Hive. Melakukan parsing JSON ke model data dan implementasi konkret dari antarmuka repositori.
+3. Domain Layer: Berisi entitas bisnis murni dan kontrak repositori yang bersifat independen terhadap pustaka eksternal atau kerangka kerja UI.
+4. Presentation Layer: Komponen antarmuka pengguna (UI) yang memanfaatkan ChangeNotifier dan Consumer dari paket Provider untuk merender perubahan status secara reaktif.
+
+### Pola Desain
+- Repository Pattern: Mengisolasi lapisan data dari logika bisnis sehingga sumber data dapat diganti tanpa merombak lapisan domain atau presentasi.
+- Provider Pattern: Mengelola siklus hidup status aplikasi secara reaktif dan hemat alokasi memori.
+- Dependency Injection: Memfasilitasi penggantian komponen saat pengujian unit menggunakan get_it atau konstruktor injeksi.
+- Result / Failure Pattern: Pendekatan pemodelan kegagalan bertipe ketat untuk menghindari unhandled runtime exceptions.
+
+### Alur Data dan State Management
+1. Pengguna memasukkan data pada field input di Presentation Layer.
+2. Provider menerima input dan memicu timer debounce 500 milidetik.
+3. Setelah debounce selesai, Provider memanggil metode pada Repository.
+4. Repository memeriksa validitas cache lokal. Jika cache masih berlaku (kurang dari 1 jam), data lokal langsung dikembalikan. Jika telah kedaluwarsa, permintaan HTTP dikirimkan ke remote API.
+5. Hasil konversi dikembalikan ke Provider.
+6. Provider memperbarui nilai status (state) dan memanggil notifyListeners().
+7. Widgets yang berlangganan melakukan pembaruan tampilan antarmuka secara instan.
+8. Data konversi disimpan secara asinkron ke dalam box Hive untuk keperluan riwayat.
+
+---
+
+## Struktur Direktori Proyek
+
+```
+currency_temperature_converter_mobile_app/
+|-- android/                         # Konfigurasi platform Android native
+|-- ios/                             # Konfigurasi platform iOS native
+|-- web/                             # Konfigurasi platform Web hosting & PWA
+|-- windows/                         # Konfigurasi platform desktop Windows
+|-- macos/                           # Konfigurasi platform desktop macOS
+|-- linux/                           # Konfigurasi platform desktop Linux
+|-- assets/                          # Aset visual aplikasi dan konfigurasi ikon
+|   `-- icon/                        # File ikon master aplikasi
+|-- integration_test/                # Pengujian integrasi end-to-end
+|   `-- app_test.dart                # Pengujian skenario alur pengguna lengkap
+|-- lib/                             # Kode sumber utama aplikasi
+|   |-- core/                        # Modul inti aplikasi
+|   |   |-- accessibility/           # Utilitas aksesibilitas
+|   |   |-- animations/              # Utilitas animasi transisi kustom
+|   |   |-- config/                  # Konfigurasi runtime
+|   |   |-- constants/               # Konstanta API, rute, dan batasan aplikasi
+|   |   |-- design_system/           # Token warna, spasi, dan tipografi
+|   |   |-- di/                      # Pendaftaran injeksi ketergantungan
+|   |   |-- errors/                  # Definisi kelas kesalahan dan kegagalan
+|   |   |-- logging/                 # Utilitas pencatatan log
+|   |   |-- services/                # Layanan internal dasar
+|   |   |-- themes/                  # Konfigurasi tema Light dan Dark
+|   |   `-- utils/                   # Fungsi pembantu dan validator
+|   |-- data/                        # Lapisan data
+|   |   |-- models/                  # Data Transfer Objects dan adapter Hive
+|   |   |-- repositories/            # Implementasi konkret repositori
+|   |   `-- services/                # Layanan eksternal (API HTTP, GPS, Storage)
+|   |-- domain/                      # Lapisan domain
+|   |   |-- core/                    # Abstraksi inti domain
+|   |   |-- entities/                # Entitas bisnis aplikasi
+|   |   |-- failures/                # Objek kegagalan domain
+|   |   |-- repositories/            # Kontrak antarmuka repositori
+|   |   `-- usecases/                # Kasus penggunaan bisnis
+|   |-- presentation/                # Lapisan antarmuka pengguna
+|   |   |-- providers/               # Pengelola state aplikasi
+|   |   |-- screens/                 # Halaman utama aplikasi
+|   |   |   |-- currency_screen.dart     # Halaman konverter mata uang
+|   |   |   |-- history_screen.dart      # Halaman riwayat konversi
+|   |   |   |-- home_screen.dart         # Halaman kontainer navigasi utama
+|   |   |   |-- settings_screen.dart     # Halaman pengaturan preferensi
+|   |   |   `-- temperature_screen.dart  # Halaman konverter suhu
+|   |   `-- widgets/                 # Komponen antarmuka yang dapat digunakan ulang
+|   |-- routes/                      # Manajemen rute navigasi aplikasi
+|   |   `-- app_router.dart          # Router terpusat
+|   |-- app.dart                     # Konfigurasi root widget MaterialApp
+|   `-- main.dart                    # Titik masuk eksekusi (entry point) aplikasi
+|-- test/                            # Rangkaian pengujian perangkat lunak
+|   |-- unit/                        # Pengujian logika unit bisnis
+|   |   |-- currency_converter_test.dart
+|   |   |-- models_test.dart
+|   |   |-- temperature_converter_test.dart
+|   |   `-- validators_test.dart
+|   `-- widget/                      # Pengujian komponen widget UI
+|-- .env.example                     # Contoh template variabel lingkungan
+|-- analysis_options.yaml            # Konfigurasi linter statis analyzer
+|-- pubspec.yaml                     # Manifest dependensi dan metadata proyek
+`-- README.md                        # Dokumentasi teknis proyek
+```
+
+---
+
+## Daftar Dependensi
+
+Seluruh paket dependensi yang digunakan berlisensi sumber terbuka (open-source) dan dapat digunakan secara bebas:
+
+| Kategori | Paket | Versi | Fungsi Utama |
+|---|---|---|---|
+| State Management | provider | ^6.1.1 | Pengelolaan status reaktif pada antarmuka |
+| State Management | flutter_riverpod | ^3.0.3 | Framework manajemen state alternatif |
+| Dependency Injection | get_it | ^7.6.4 | Service locator untuk pemisahan ketergantungan |
+| Dependency Injection | injectable | ^2.7.1 | Generator kode injeksi dependensi otomatis |
+| Networking | http | ^1.1.2 | Eksekusi permintaan protokol HTTP ke API |
+| Local Database | hive | ^2.2.3 | Database NoSQL lokal berkecepatan tinggi |
+| Local Database | hive_flutter | ^1.1.0 | Integrasi siklus hidup Hive untuk Flutter |
+| Persistence | shared_preferences | ^2.2.2 | Penyimpanan preferensi pengguna berbasis key-value |
+| Persistence | flutter_secure_storage | ^9.2.4 | Enkripsi data lokal sensitif pada penyimpanan aman |
+| Geolocation | geolocator | ^11.0.0 | Pengambilan koordinat posisi perangkat (GPS) |
+| Geolocation | geocoding | ^4.0.0 | Pemetaan koordinat lintang/bujur ke nama negara |
+| Device Hardware | vibration | ^3.1.5 | Akses motor haptic untuk getaran taktil responsif |
+| Device Hardware | device_info_plus | ^12.3.0 | Ekstraksi informasi perangkat keras dan OS |
+| UI & Formatting | google_fonts | ^6.1.0 | Tipografi dinamis dan rendering font modern |
+| UI & Formatting | shimmer | ^3.0.0 | Animasi shimmering selama pemuatan data asinkron |
+| UI & Formatting | share_plus | ^12.0.1 | Pemanggilan native sharing sheet sistem operasi |
+| UI & Formatting | intl | ^0.19.0 | Format desimal, mata uang, dan tanggal lokal |
+| Code Generation | build_runner | ^2.4.13 | Orkestrasi otomatis generator kode Dart |
+| Code Generation | hive_generator | ^2.0.1 | Pembuatan TypeAdapter persisten untuk Hive |
+| Linter & Quality | flutter_lints | ^3.0.1 | Rangkaian aturan analisis statis resmi Flutter |
+
+---
+
+## Dukungan Platform
+
+| Platform | Status Dukungan | Versi Minimum | Catatan Khusus |
+|---|---|---|---|
+| Android | Didukung Penuh | Android 5.0 (API 21+) | Seluruh fitur GPS, Haptic, dan API berjalan optimal |
+| iOS | Didukung Penuh | iOS 11.0+ | Memerlukan izin Info.plist untuk akses lokasi |
+| Web | Didukung dengan Catatan | Browser modern (Chrome, Safari, Firefox, Edge) | GPS memerlukan HTTPS. Panggilan API langsung di localhost menggunakan fallback demo rates jika terhalang CORS |
+| Windows | Didukung Penuh | Windows 10 x64 atau lebih baru | Native desktop build |
+| macOS | Didukung Penuh | macOS 10.14 Mojave atau lebih baru | Native desktop build |
+| Linux | Didukung Penuh | Ubuntu 20.04 LTS atau distribusi setara | Native desktop build (GTK+ 3.0) |
+
+---
+
+## Prasyarat Sistem
+
+Sebelum melakukan instalasi dan kompilasi aplikasi, pastikan perangkat kerja Anda telah memenuhi prasyarat berikut:
+
+1. Flutter SDK versi 3.10.4 atau yang lebih baru.
+2. Dart SDK versi 3.0.0 atau yang lebih baru (terpasang otomatis bersama Flutter).
+3. Git command-line tools.
+4. Editor kode yang disarankan:
+   - Visual Studio Code dengan ekstensi resmi Flutter dan Dart.
+   - Android Studio dengan Android SDK Command-line Tools dan Android Emulator.
+5. Kompiler platform lokal (opsional untuk build desktop):
+   - Windows: Visual Studio 2022 dengan komponen Desktop development with C++.
+   - macOS: Xcode 14 atau lebih baru beserta CocoaPods.
+   - Linux: Clang, CMake, Ninja build, dan pustaka GTK development.
+
+Jalankan perintah verifikasi kesiapan sistem:
+```bash
+flutter doctor
+```
+Pastikan seluruh status bertanda checklist tanpa isu kritis yang belum terselesaikan.
+
+---
+
+## Panduan Instalasi dan Menjalankan Aplikasi
+
+### 1. Klon Repositori
+Buka terminal dan unduh kode sumber proyek:
 ```bash
 git clone https://github.com/Just-Fajar/currency_temperature_converter_mobile_app.git
 cd currency_temperature_converter_mobile_app
 ```
 
-**2. Install dependencies**
+### 2. Instalasi Dependensi
+Jalankan pengunduhan pustaka dependensi pihak ketiga:
 ```bash
 flutter pub get
 ```
 
-**3. Jalankan aplikasi**
+Jika terjadi perubahan pada skema model Hive atau dependensi code-generation:
+```bash
+flutter pub run build_runner build --delete-conflicting-outputs
+```
 
-**Di Chrome (Web):**
+### 3. Menjalankan di Web
+Untuk menjalankan pada browser Google Chrome:
 ```bash
 flutter run -d chrome --web-port=8090
 ```
-
-**Di Android Emulator/Device:**
-```bash
-flutter run
-```
-
-**Di Desktop:**
-```bash
-# Windows
-flutter run -d windows
-
-# macOS
-flutter run -d macos
-
-# Linux
-flutter run -d linux
-```
-
-**4. Buka di browser**
+Setelah proses kompilasi selesai, buka browser pada alamat:
 ```
 http://localhost:8090
 ```
 
----
-
-## 🧪 Testing
-
-Aplikasi memiliki test coverage yang komprehensif:
-
-### Unit Tests (92 tests - SEMUA PASSING ✅)
-- **Currency Converter**: 13 tests untuk logika konversi, exchange rates, dan formatting
-- **Temperature Converter**: 25 tests untuk semua konversi unit suhu
-- **Validators**: 35 tests untuk validasi input dan sanitasi
-- **Data Models**: 19 tests untuk model ConversionHistory
-
-**Menjalankan Tests:**
+### 4. Menjalankan di Android
+Pastikan perangkat Android fisik terhubung dengan mode USB Debugging aktif, atau Android Emulator sedang berjalan:
 ```bash
-# Semua unit tests
-flutter test test/unit/
+# Menampilkan daftar perangkat yang terdeteksi
+flutter devices
 
-# Dengan coverage report
-flutter test --coverage
-
-# Test spesifik
-flutter test test/unit/validators_test.dart
-
-# Widget tests
-flutter test test/widget/
+# Menjalankan aplikasi ke perangkat yang aktif
+flutter run
 ```
 
-### Integration Tests
-- End-to-end testing untuk user flow lengkap
-- Located di `integration_test/app_test.dart`
+### 5. Menjalankan di Desktop
+Jalankan target desktop sesuai sistem operasi Anda:
 
+Untuk Windows:
+```bash
+flutter run -d windows
+```
+
+Untuk macOS:
+```bash
+flutter run -d macos
+```
+
+Untuk Linux:
+```bash
+flutter run -d linux
+```
+
+---
+
+## Panduan Pengujian
+
+Converter Pro menerapkan pengujian otomatis berlapis untuk menjamin keandalan fungsional, integritas kalkulasi matematis, dan kestabilan antarmuka pengguna.
+
+### Unit Testing
+Rangkaian unit test mencakup pengujian menyeluruh terhadap 92 skenario logika bisnis yang terbagi ke dalam empat berkas utama:
+- `test/unit/currency_converter_test.dart` (13 pengujian): Menguji logika pertukaran valuta, penanganan desimal, validasi rasio kurs, dan mekanisme pembulatan.
+- `test/unit/temperature_converter_test.dart` (25 pengujian): Menguji seluruh kombinasi konversi timbal-balik antara Celsius, Fahrenheit, Kelvin, dan Reamur, termasuk titik didih, titik beku, dan batas Absolute Zero (-273.15 C).
+- `test/unit/validators_test.dart` (35 pengujian): Menguji sanitasi masukan pengguna, pembatasan karakter ilegal, angka negatif, titik desimal berulang, dan penanganan nilai kosong.
+- `test/unit/models_test.dart` (19 pengujian): Menguji serialisasi dan deserialisasi model data, adapter Hive, serta keutuhan entitas ConversionHistory.
+
+Perintah menjalankan unit test:
+```bash
+# Menjalankan seluruh pengujian unit
+flutter test test/unit/
+
+# Menjalankan pengujian dengan metrik cakupan kode (coverage)
+flutter test --coverage
+
+# Menjalankan salah satu berkas pengujian secara terisolasi
+flutter test test/unit/validators_test.dart
+```
+
+### Integration Testing
+Pengujian integrasi end-to-end terletak pada `integration_test/app_test.dart` untuk memverifikasi alur interaksi nyata pengguna dari halaman konversi hingga penyimpanan riwayat:
 ```bash
 flutter test integration_test/app_test.dart
 ```
 
----
-
-## 📦 Dependencies
-
-Semua package yang digunakan **100% GRATIS** dan open-source:
-
-### State Management & Core
-- `provider ^6.1.1` - State management pattern
-- `get_it ^7.6.4` - Dependency injection
-
-### Networking & Storage
-- `http ^1.1.2` - API calls untuk exchange rates
-- `shared_preferences ^2.2.2` - Penyimpanan pengaturan
-- `hive ^2.2.3` + `hive_flutter ^1.1.0` - Local database untuk riwayat
-- `flutter_secure_storage ^9.2.4` - Secure storage untuk data sensitif
-
-### Location & Sensors
-- `geolocator ^11.0.0` - GPS functionality
-- `geocoding ^4.0.0` - Reverse geocoding (country detection)
-- `vibration ^2.0.0` - Haptic feedback
-- `device_info_plus ^11.5.0` - Device information
-
-### UI & Utils
-- `google_fonts ^6.1.0` - Custom typography
-- `shimmer ^3.0.0` - Loading animations
-- `share_plus ^12.0.1` - Native share functionality
-- `intl ^0.19.0` - Number dan date formatting
-
-### Development
-- `flutter_lints ^3.0.1` - Linting rules
-- `build_runner ^2.4.13` - Code generation untuk Hive
-- `hive_generator ^2.0.1` - Hive adapter generation
-
-**Total Size:** ~15MB (dependencies)
-**Cost:** 100% FREE ✓
-
----
-
-## 📱 Platform Support
-
-| Platform | Status | Minimum Version |
-|----------|--------|-----------------|
-| 🤖 Android | ✅ Fully Supported | API 21+ (Android 5.0) |
-| 🍎 iOS | ✅ Fully Supported | iOS 11.0+ |
-| 🌐 Web | ✅ Supported* | Modern browsers (Chrome, Firefox, Safari) |
-| 🪟 Windows | ✅ Fully Supported | Windows 10+ |
-| 🍏 macOS | ✅ Fully Supported | macOS 10.14+ |
-| 🐧 Linux | ✅ Fully Supported | 64-bit distributions |
-
-**Web Platform Notes:**
-- ⚠️ GPS auto-detection memerlukan HTTPS (disabled di localhost HTTP)
-- ⚠️ API calls mungkin blocked oleh CORS (menggunakan demo rates sebagai fallback)
-- ✅ Semua fitur lainnya berfungsi penuh
-
----
-
-## 🏗️ Arsitektur
-
-Aplikasi mengikuti **Clean Architecture** principles:
-
-```
-lib/
-├── core/                   # Konstanta, themes, utilities
-│   ├── constants/         # API constants, app constants
-│   ├── design_system/     # Typography, colors, spacing
-│   ├── di/                # Dependency injection setup
-│   ├── errors/            # Failure classes & error handling
-│   ├── services/          # Core services (logging, storage, etc)
-│   └── utils/             # Helper utilities
-│
-├── data/                   # Data layer
-│   ├── models/            # Data models (ConversionHistory, CurrencyModel)
-│   ├── repositories/      # Repository implementations
-│   └── services/          # External services (API, location)
-│
-├── domain/                 # Business logic layer
-│   ├── core/              # Result pattern, base classes
-│   ├── entities/          # Domain entities
-│   ├── repositories/      # Repository interfaces
-│   └── usecases/          # Business use cases
-│
-├── presentation/           # UI layer
-│   ├── providers/         # State management (Provider pattern)
-│   ├── screens/           # Screen widgets
-│   └── widgets/           # Reusable UI components
-│
-└── routes/                 # App routing
-    └── app_router.dart
-```
-
-### Design Patterns
-- ✅ **Clean Architecture** - Separation of concerns
-- ✅ **Repository Pattern** - Data abstraction
-- ✅ **Provider Pattern** - State management
-- ✅ **Dependency Injection** - Loose coupling
-- ✅ **Result Pattern** - Type-safe error handling
-
----
-
-## 🎯 Fitur Unggulan
-
-### 1. Konversi Mata Uang Cerdas
-- **Auto-caching**: Exchange rates di-cache selama 5 menit
-- **Offline mode**: Tetap bisa convert dengan cached rates
-- **Demo mode**: Fallback ke sample rates jika API blocked
-- **Debouncing**: Konversi otomatis dengan delay 500ms untuk performa optimal
-
-### 2. Deteksi Lokasi GPS
-- Deteksi otomatis mata uang berdasarkan lokasi Anda
-- Mapping 40+ negara ke mata uang yang sesuai
-- Permission handling yang proper
-- **Note**: Tidak tersedia di web platform (HTTPS requirement)
-
-### 3. Riwayat Konversi
-- Simpan semua konversi (currency & temperature)
-- Search berdasarkan currency, unit, atau nilai
-- Filter: All / Currency / Temperature
-- Sort: By Date / By Type
-- Tap untuk reuse conversion
-- Clear all history dengan konfirmasi
-
-### 4. Pengaturan Kustom
-- Default currency selection
-- Decimal places (0-4)
-- Auto-update rates toggle
-- Haptic feedback toggle
-- GPS detection toggle
-- Theme mode (Light/Dark/System)
-
----
-
-## ⚡ Performance & Security
-
-### Performance Optimizations
-- ✅ Lazy loading untuk heavy widgets
-- ✅ Debounced input untuk reduce API calls
-- ✅ Build optimization dengan const constructors
-- ✅ Heavy computation di background isolates
-- ✅ Efficient caching strategy
-
-### Security Features
-- ✅ Secure storage untuk data sensitif
-- ✅ Input validation & sanitization
-- ✅ Certificate pinning support (production ready)
-- ✅ API key management (environment-based)
-- ✅ Code obfuscation ready
-
----
-
-## 🐛 Known Issues & Limitations
-
-### Web Platform
-1. **GPS Auto-Detection**: Tidak berfungsi di localhost HTTP
-   - **Alasan**: Browser API memerlukan HTTPS untuk geolocation
-   - **Solusi**: Deploy ke HTTPS server atau gunakan mobile/desktop app
-   - **Workaround**: Manual selection dari dropdown
-
-2. **API Currency Rates**: Mungkin blocked oleh CORS
-   - **Alasan**: Browser security policy
-   - **Fallback**: Otomatis menggunakan demo rates (18 currencies)
-   - **Akurasi**: Demo rates tetap realistic untuk testing
-   - **Production**: Deploy ke HTTPS dengan proxy backend
-
-### General
-- Exchange rate API gratis memiliki rate limit (tidak termasuk API key)
-- Haptic feedback hanya berfungsi di perangkat yang mendukung vibration
-
----
-
-## 🔧 Development Guide
-
-### Setup Development Environment
-
-**1. Install Flutter**
-```bash
-# Windows (via Chocolatey)
-choco install flutter
-
-# macOS (via Homebrew)
-brew install flutter
-
-# Atau download manual dari: https://flutter.dev/docs/get-started/install
-```
-
-**2. Verify Installation**
-```bash
-flutter doctor
-```
-
-**3. IDE Setup**
-- VS Code: Install Flutter extension
-- Android Studio: Install Flutter & Dart plugins
-
-### Hot Reload & Debug
-
-**Terminal Commands:**
-- `r` - Hot reload (apply changes tanpa restart)
-- `R` - Hot restart (restart app dengan state baru)
-- `p` - Toggle performance overlay
-- `o` - Toggle platform (iOS/Android di simulator)
-- `q` - Quit
-
-### Build Commands
-
-**Debug Builds:**
-```bash
-flutter run                    # Default device
-flutter run -d chrome          # Web
-flutter run -d windows         # Windows desktop
-```
-
-**Release Builds:**
-```bash
-# Android
-flutter build apk --release
-flutter build appbundle --release
-
-# iOS (requires macOS)
-flutter build ios --release
-
-# Web (optimized)
-flutter build web --release --web-renderer html
-
-# Desktop
-flutter build windows --release
-flutter build macos --release
-flutter build linux --release
-```
-
----
-
-## 📊 Code Quality
-
-### Analyzer Status
+### Analisis Statis Kode
+Proyek ini mematuhi standar penulisan kode resmi Flutter dengan konfigurasi linter ketat pada `analysis_options.yaml`:
 ```bash
 flutter analyze
 ```
-**Result:** ✅ No issues found! (0 errors, 0 warnings, 0 info)
+Hasil analisis kode harus menunjukkan:
+```
+No issues found!
+```
 
-### Test Coverage
+---
+
+## Panduan Build dan Rilis
+
+### Android (APK dan App Bundle)
+
+1. Menghasilkan berkas APK Release:
 ```bash
-flutter test --coverage
+flutter build apk --release
 ```
-**Coverage:** 92 unit tests (100% passing)
+Lokasi keluaran berkas:
+`build/app/outputs/flutter-apk/app-release.apk`
 
-### Code Metrics
-- **Total Files:** 60+ Dart files
-- **Total Lines:** ~8,000+ lines of code
-- **Architecture:** Clean Architecture
-- **Test Files:** 15+ test files
-- **Documentation:** Inline comments & dartdoc
-
----
-
-## 🎓 Cara Menggunakan Aplikasi
-
-### Konversi Mata Uang
-
-1. **Masukkan Jumlah**
-   - Ketik jumlah di field "Amount"
-   - Hasil otomatis muncul setelah 500ms (debounced)
-
-2. **Pilih Mata Uang**
-   - "From": Mata uang asal (default: USD)
-   - "To": Mata uang tujuan (default: EUR)
-   - Dropdown menampilkan simbol, kode, dan nama lengkap
-
-3. **GPS Auto-Detect** (Mobile/Desktop only)
-   - Klik icon 📍 di top-right
-   - App akan detect lokasi Anda
-   - Currency otomatis dipilih sesuai negara
-
-4. **Swap Currencies**
-   - Klik tombol ↕️ di tengah
-   - Tukar posisi From ↔ To dengan sekali tap
-
-5. **Share atau Copy**
-   - Klik icon 📋 untuk copy hasil
-   - Klik icon 🔗 untuk share hasil
-
-### Konversi Suhu
-
-1. **Pilih Unit Asal**
-   - Celsius, Fahrenheit, Kelvin, atau Reamur
-
-2. **Masukkan Nilai**
-   - Ketik suhu yang ingin dikonversi
-
-3. **Lihat Hasil**
-   - Semua unit lainnya otomatis ter-konversi
-   - Color indicator (biru=dingin, merah=panas)
-
-### Riwayat Konversi
-
-1. **Akses History**
-   - Klik tab "History" di bottom navigation
-
-2. **Filter**
-   - All: Semua konversi
-   - Currency: Hanya mata uang
-   - Temperature: Hanya suhu
-
-3. **Search**
-   - Ketik currency code, unit, atau nilai
-   - Real-time filtering
-
-4. **Reuse Conversion**
-   - Tap pada item history
-   - Auto-load ke converter screen
-
-5. **Clear History**
-   - Klik "Clear All" button
-   - Konfirmasi dialog muncul
-
-### Pengaturan
-
-Klik icon ⚙️ untuk mengakses:
-- **Default Currency**: Pilih mata uang default
-- **Decimal Places**: Atur presisi (0-4 digit)
-- **Auto Update Rates**: Toggle auto-refresh rates
-- **Haptic Feedback**: Enable/disable getaran
-- **GPS Detection**: Enable/disable auto-detect
-- **Theme Mode**: Light / Dark / System
-
----
-
-## 🛠️ Troubleshooting
-
-### Masalah Umum
-
-**1. "Network error and no cached rates available"**
-- **Penyebab**: Tidak ada koneksi internet dan belum ada cache
-- **Solusi**: 
-  - Connect ke internet
-  - Atau wait - demo rates akan auto-load sebagai fallback
-
-**2. "GPS on web requires HTTPS"**
-- **Penyebab**: Browser memerlukan HTTPS untuk geolocation
-- **Solusi**: 
-  - Gunakan mobile/desktop app untuk GPS
-  - Atau pilih currency manual dari dropdown
-
-**3. "Using demo rates (API unavailable - CORS blocked)"**
-- **Penyebab**: Browser CORS policy blocking API
-- **Impact**: ✅ Tidak masalah! Demo rates tetap akurat
-- **Note**: Di mobile/desktop, real API akan digunakan
-
-**4. History tidak muncul**
-- **Penyebab**: Storage belum initialized
-- **Solusi**: Wait beberapa detik, lalu refresh screen
-- **Fixed**: Storage auto-init saat app start
-
-**5. App lag saat mengetik**
-- **Penyebab**: Debounce timer
-- **Normal**: App wait 500ms sebelum convert (optimize API calls)
-
----
-
-## 🏗️ Struktur Project
-
-```
-currency_temperature_converter_mobile_app/
-│
-├── android/                # Android platform code
-├── ios/                    # iOS platform code  
-├── web/                    # Web platform code
-├── windows/                # Windows platform code
-├── linux/                  # Linux platform code
-├── macos/                  # macOS platform code
-│
-├── lib/                    # Main application code
-│   ├── core/              # Core utilities & constants
-│   ├── data/              # Data layer (models, repos, services)
-│   ├── domain/            # Business logic layer
-│   ├── presentation/      # UI layer (screens, widgets, providers)
-│   ├── routes/            # Navigation & routing
-│   ├── app.dart           # App widget
-│   └── main.dart          # Entry point
-│
-├── test/                   # Test files
-│   ├── unit/              # Unit tests
-│   ├── widget/            # Widget tests
-│   └── integration_test/  # Integration tests
-│
-├── docs/                   # Documentation
-├── coverage/              # Coverage reports
-├── build/                 # Build outputs
-│
-├── pubspec.yaml           # Dependencies
-├── analysis_options.yaml  # Analyzer configuration
-└── README.md             # This file
-```
-
----
-
-## 🔑 Environment Configuration
-
-### Development (Default)
-Aplikasi berjalan dengan konfigurasi default:
-- Demo exchange rates sebagai fallback
-- Debug logging enabled
-- GPS detection dengan helpful messages
-
-### Production (Optional)
-
-Untuk production deployment dengan real API:
-
-**1. Setup API Key** (Optional - untuk rate limit lebih tinggi)
+2. Menghasilkan berkas Android App Bundle (AAB) untuk Google Play Store:
 ```bash
-# Create .env file
-EXCHANGE_RATE_API_KEY=your_api_key_here
+flutter build appbundle --release
 ```
+Lokasi keluaran berkas:
+`build/app/outputs/bundle/release/app-release.aab`
 
-**2. Enable Production Mode**
-```dart
-// lib/main.dart
-const bool isProduction = true; // Change ke true
-```
-
-**3. Deploy dengan HTTPS**
-- GPS akan berfungsi
-- Real API rates (jika sudah setup proxy)
-
----
-
-## 📈 Roadmap & Future Enhancements
-
-### Planned Features
-- [ ] Cryptocurrency support (BTC, ETH, dll)
-- [ ] Historical rate charts
-- [ ] Favorite currencies
-- [ ] Rate alerts
-- [ ] Multi-language support
-- [ ] Export history ke CSV/PDF
-- [ ] Offline-first architecture
-- [ ] Firebase integration (optional)
-
-### Performance Improvements
-- [ ] Pagination untuk large history
-- [ ] Image optimization
-- [ ] Code splitting untuk web
-
----
-
-## 📖 Dokumentasi Lengkap
-
-Untuk dokumentasi teknis lengkap, lihat:
-- **[dokumentasi-pembuatan.md](dokumentasi-pembuatan.md)** - Complete development log
-- **[QUICK_START.md](QUICK_START.md)** - Quick setup guide untuk developers
-- **[DOCS_INDEX.md](DOCS_INDEX.md)** - Index semua dokumentasi
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Untuk berkontribusi:
-
-1. Fork repository
-2. Create feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to branch (`git push origin feature/AmazingFeature`)
-5. Open Pull Request
-
-### Contribution Guidelines
-- Ikuti Flutter best practices
-- Tulis tests untuk fitur baru
-- Update dokumentasi jika diperlukan
-- Run `flutter analyze` sebelum commit (harus 0 issues)
-- Run `flutter test` untuk ensure semua tests passing
-
----
-
-## 📞 Support & Contact
-
-Jika menemukan bug atau ingin request fitur:
-- **GitHub Issues**: [Create an issue](https://github.com/Just-Fajar/currency_temperature_converter_mobile_app/issues)
-- **Discussions**: [Start a discussion](https://github.com/Just-Fajar/currency_temperature_converter_mobile_app/discussions)
-
----
-
-## 📄 License
-
-Project ini dibuat untuk tujuan edukasi dan portfolio.
-
-**Open Source Licenses:**
-- App code: Educational use
-- Dependencies: Masing-masing memiliki lisensi open-source (MIT, BSD, Apache 2.0)
-
----
-
-## 🙏 Credits & Acknowledgments
-
-### APIs & Services
-- **ExchangeRate-API**: Free exchange rates API ([exchangerate-api.com](https://www.exchangerate-api.com))
-- **Google Fonts**: Free fonts untuk typography
-
-### Flutter Packages
-Terima kasih kepada semua package maintainers di pub.dev yang membuat development Flutter lebih mudah.
-
-### Development
-- **Framework**: Flutter by Google
-- **Language**: Dart by Google
-- **IDE**: Visual Studio Code / Android Studio
-
----
-
-## 📊 Project Stats
-
-| Metric | Value |
-|--------|-------|
-| **Flutter Version** | 3.10.4+ |
-| **Dart Version** | 3.0.0+ |
-| **Total Files** | 60+ files |
-| **Lines of Code** | ~8,000+ lines |
-| **Test Files** | 15 files |
-| **Unit Tests** | 92 tests (100% passing) |
-| **Analyzer Issues** | 0 ✓ |
-| **Supported Platforms** | 6 platforms |
-| **Supported Currencies** | 18 currencies |
-| **Supported Temp Units** | 4 units |
-| **Development Time** | December 2025 |
-
----
-
-## 🚦 Quick Commands Reference
-
+3. Menghasilkan APK per-arsitektur CPU (opsional untuk meminimalkan ukuran file instalasi):
 ```bash
-# Development
-flutter run -d chrome --web-port=8090    # Run di browser
-flutter run -d windows                   # Run di Windows
-flutter run                              # Run di default device
-
-# Testing  
-flutter test                             # All tests
-flutter test --coverage                  # With coverage
-flutter analyze                          # Check code quality
-
-# Build
-flutter build apk --release             # Android APK
-flutter build web --release             # Web build
-flutter build windows --release         # Windows exe
-
-# Clean & Rebuild
-flutter clean                           # Clean build cache
-flutter pub get                         # Get dependencies
-flutter pub upgrade                     # Upgrade dependencies
+flutter build apk --release --split-per-abi
 ```
 
----
+### Web Production
+Kompilasi build statis untuk produksi web dengan optimasi renderer:
+```bash
+flutter build web --release --web-renderer canvaskit
+```
+Keluaran berkas statis siap diunggah ke server hosting atau layanan CDN seperti Cloudflare Pages, Firebase Hosting, atau Vercel melalui direktori `build/web/`.
 
-## ⭐ Features Highlights
+### Desktop Executable
+Kompilasi paket biner desktop untuk distribusi lokal:
 
-### ✅ What Works Perfectly
-- ✨ Currency conversion dengan 18 mata uang
-- ✨ Temperature conversion dengan 4 unit
-- ✨ Riwayat konversi dengan search & filter
-- ✨ Theme switching (light/dark)
-- ✨ Responsive design (mobile/tablet/desktop)
-- ✨ All tests passing (92/92)
-- ✨ Zero analyzer issues
-- ✨ Copy & share functionality
-- ✨ Haptic feedback
-- ✨ Offline support dengan caching
+- Windows:
+```bash
+flutter build windows --release
+```
+Hasil keluaran biner: `build/windows/x64/runner/Release/`
 
-### ⚠️ Platform-Specific Limitations
-- 🌐 **Web**: GPS requires HTTPS (gracefully handled dengan dialog)
-- 🌐 **Web**: API might be CORS-blocked (auto fallback ke demo rates)
-- 📱 **Mobile**: Semua fitur berfungsi 100%
-- 🖥️ **Desktop**: Semua fitur berfungsi 100%
+- macOS:
+```bash
+flutter build macos --release
+```
+Hasil keluaran aplikasi: `build/macos/Build/Products/Release/`
 
----
-
-<div align="center">
-
-## 🎉 Ready to Use!
-
-**Project Status:** ✅ Production Ready
-
-**Test Coverage:** ✅ 92 Tests Passing
-
-**Code Quality:** ✅ 0 Analyzer Issues
-
-**Platforms:** ✅ 6 Platforms Supported
+- Linux:
+```bash
+flutter build linux --release
+```
+Hasil keluaran biner: `build/linux/x64/release/bundle/`
 
 ---
 
-**Made with ❤️ using Flutter**
+## Optimasi Performa dan Keamanan
 
-**[View Demo](http://localhost:8090)** • **[Report Bug](https://github.com/Just-Fajar/currency_temperature_converter_mobile_app/issues)** • **[Request Feature](https://github.com/Just-Fajar/currency_temperature_converter_mobile_app/issues)**
+### Optimasi Performa
+- Input Debouncing: Input pengguna dijeda dengan durasi 500 milidetik sebelum memanggil fungsi kalkulasi atau permintaan jaringan, mencegah pemborosan beban pemrosesan dan penggunaan kuota API.
+- Local Storage Fast I/O: Penggunaan Hive berbasis binary storage NoSQL memastikan operasi baca-tulis riwayat konversi berjalan tanpa mengganggu kelancaran framerate antarmuka (60/120 FPS).
+- Const Constructor Enforcement: Komponen widget stateless menggunakan deklarasi konstan (`const`) secara konsisten guna meminimalkan siklus rebuild yang tidak dibutuhkan pada widget tree.
+- Lazy Initialization: Inisialisasi adapter database dan preferensi dilakukan secara asinkron di awal pemanggilan aplikasi dengan mekanisme FutureBuilder fallback.
 
-</div>
+### Keamanan Data
+- Local Data Isolation: Riwayat konversi disimpan secara lokal pada perangkat pengguna tanpa pengiriman data pribadi ke server pihak ketiga.
+- Input Sanitization: Setiap masukan teks melalui proses sanitasi dan regex validator ketat untuk mencegah anomali tipe data angka dan pembagian dengan nol.
+- Secure Preferences Ready: Mendukung penyimpanan berbasis FlutterSecureStorage untuk token atau kunci rahasia masa depan dengan enkripsi Keychain (iOS) dan Keystore (Android).
+
+---
+
+## Batasan Platform dan Solusi
+
+### 1. Geolocation pada Lingkungan Web
+- Masalah: Browser modern membatasi akses Geolocation API jika aplikasi diakses melalui protokol HTTP biasa.
+- Solusi: Pada mode pengetesan lokal tanpa HTTPS, aplikasi menyediakan dialog informatif dan mengarahkan pengguna untuk memilih mata uang secara manual dari daftar dropdown. Pada rilis produksi web, implementasikan sertifikat SSL/TLS (HTTPS).
+
+### 2. Kebijakan CORS pada Web Browser
+- Masalah: Permintaan langsung ke API valuta asing dari peramban web dapat diblokir oleh Cross-Origin Resource Sharing (CORS) policy.
+- Solusi: Aplikasi dilengkapi mekanisme fallback cerdas yang secara otomatis menggunakan nilai kurs rujukan (cached demo rates) jika permintaan jaringan gagal akibat hambatan CORS. Pada platform native (Android, iOS, Windows, macOS, Linux), pembatasan CORS tidak berlaku sehingga pembaruan kurs berjalan langsung secara normal.
+
+### 3. Ketersediaan Fitur Haptic Feedback
+- Masalah: Motor penggetar fisik hanya tersedia pada ponsel pintar atau tablet tertentu.
+- Solusi: Modul haptic membungkus pemanggilan Vibration API dalam pengecekan kompatibilitas hardware (`Vibration.hasVibrator()`). Jika perangkat tidak memiliki motor getar (misalnya PC desktop standar), aplikasi tetap beroperasi secara normal tanpa menimbulkan galat.
+
+---
+
+## Panduan Kontribusi
+
+Kontribusi pada pengembangan proyek Converter Pro sangat diapresiasi. Silakan ikuti alur kerja berikut:
+
+1. Lakukan Fork pada repositori ini.
+2. Buat branch fitur baru dari branch utama (`main`):
+   ```bash
+   git checkout -b feature/nama-fitur-baru
+   ```
+3. Lakukan perubahan kode sesuai panduan arsitektur dan konvensi Clean Architecture.
+4. Pastikan kode memenuhi standar analisis statis dan seluruh pengujian lolos:
+   ```bash
+   flutter analyze
+   flutter test test/unit/
+   ```
+5. Buat commit terstruktur dengan pesan yang jelas:
+   ```bash
+   git commit -m "feat: tambahkan validasi presisi desimal kustom"
+   ```
+6. Dorong branch Anda ke repositori remote:
+   ```bash
+   git push origin feature/nama-fitur-baru
+   ```
+7. Buat Pull Request (PR) ke branch `main` dengan menyertakan deskripsi perubahan yang komprehensif.
+
+---
+
+## Lisensi dan Pengakuan
+
+### Lisensi
+Proyek ini dibuat dan dikembangkan untuk keperluan akademik, portofolio rekayasa perangkat lunak, dan edukasi. Setiap pustaka pihak ketiga yang digunakan dalam proyek ini tetap tunduk pada ketentuan lisensi masing-masing (MIT, BSD-3-Clause, Apache 2.0).
+
+### Pengakuan Sumber Daya
+- ExchangeRate-API: Penyedia data kurs mata uang global (https://www.exchangerate-api.com).
+- Google Fonts: Penyedia tipografi digital berstandar terbuka.
+- Flutter & Dart Team: Kerangka kerja aplikasi multi-platform oleh Google.
+- Kontributor Komunitas Open Source: Pengembang dan pemelihara paket di pub.dev.
+
+---
+
+Converter Pro - Dikembangkan dengan standar arsitektur perangkat lunak yang bersih, teruji, dan siap pakai.
